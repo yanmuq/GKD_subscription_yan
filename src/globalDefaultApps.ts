@@ -1,8 +1,3 @@
-import { batchImportApps } from '@gkd-kit/tools';
-import { RawApp } from '@gkd-kit/api';
-
-const apps = await batchImportApps(`${import.meta.dirname}/apps`);
-
 // 全局规则黑名单
 // 在一些非系统应用中禁用所有全局规则
 export const blackListAppIDs: string[] = [
@@ -131,6 +126,27 @@ export const blackListAppIDs: string[] = [
   'cn.tinyhai.ban_uninstall', // 禁止卸载
   'cc.aoeiuv020.iamnotdisabled.hook', // 非残！
   'cc.aoeiuv020.iamnotdisabled', // 我残？
+  'io.github.jqssun.gpssetter', // GPS Setter
+  'me.hoshino.novpndetect', // NoVPNDetect
+  'com.xchat', // XChat
+  'com.kooritea.fcmfix', // fcmfix
+  'nep.timeline.re_telegram', // Re:Telegram
+  'com.fankes.tsbattery', // TSBattery
+  'top.trangle.mbga', // MBGA
+  'cc.microblock.TGStickerProvider', // TGStickerProvider
+  'xyz.xfqlittlefan.notdeveloper', // 我不是开发者
+  'com.zhenxi.hunter', // Hunter
+  'com.reveny.nativecheck', // Native Detector
+  'cn.lyric.getter', // 酒域-歌词获取
+  'io.github.vvb2060.keyattestation', // 密钥认证
+  'com.google.android.hmal', // 隐藏应用列表（@pumPCin fork）
+  'com.adguard.android', // AdGuard
+  'com.spotify.music', // Spotify
+  'jp.pxv.android', // pixiv
+  'com.fankes.apperrorstracking', // 异常跟踪
+  'com.fankes.epperrorsdemo', // 异常示例
+  'com.fankes.miui.notify', // MIUI 原生通知图标
+  'com.simo.ssl.killer', // SSL Killer
 
   'com.canghai.haoka',
   'com.xy.td',
@@ -159,6 +175,7 @@ export const blackListAppIDs: string[] = [
   'com.nurke.perfectone',
   'qlenlen.OneDesign',
   'icu.nullptr.nativetest',
+  'icu.nullptr.applistdetector',
   'io.github.vvb2060.mahoshojo',
   'com.samsung.android.memoryguardian',
   'com.music.khkj',
@@ -194,6 +211,16 @@ export const blackListAppIDs: string[] = [
   'com.rong862.bear',
   'be.mygod.vpnhotspot',
   'com.samsung.android.bixby.agent',
+  'com.reveny.vbmetafix.service',
+  'com.google.android.gms',
+  'com.android.vending',
+  'com.android.camera',
+  'com.android.traceur',
+  'com.android.mms',
+  'com.google.android.accessibility.switchaccess',
+  'com.miui.voiceassist',
+  'com.android.fileexplorer',
+  'com.miui.miservice',
 
   // 系统自带非系统应用
   // 小米
@@ -244,19 +271,9 @@ export const blackListAppIDs: string[] = [
   'com.mmbox.xbrowser', // X浏览器
   'com.mmbox.xbrowser.pro', // X浏览器Google Play版
   'com.mycompany.app.soulbrowser', // soul浏览器
-];
 
-// 如果某应用的规则中已有全局规则中的某一类的规则, 则在此应用禁用对应全局规则
-function filterAppsByGroup(apps: RawApp[], groupNamePrefix: string): string[] {
-  return apps
-    .filter(
-      (a) =>
-        a.groups.filter((g: { name: string }) =>
-          g.name.startsWith(groupNamePrefix),
-        ).length > 0,
-    )
-    .map((a) => a.id);
-}
+  'com.google.android.contactkeys', // Android System Key Verifier
+];
 
 // 在应用中单独禁用某个全局规则
 // 开屏广告黑名单
@@ -264,7 +281,6 @@ export const openAdBlackListAppIDs = new Set([
   ...blackListAppIDs,
   'com.taptap', // TapTap
   'com.sankuai.meituan', // 美团 误触 https://i.gkd.li/i/17827264
-  ...filterAppsByGroup(apps, '开屏广告'),
 ]);
 
 // 更新提示黑名单
@@ -272,7 +288,6 @@ export const updateBlackListAppIDs = new Set([
   ...blackListAppIDs,
   'info.muge.appshare', // AppShare
   'com.jingdong.app.mall', // 京东
-  ...filterAppsByGroup(apps, '更新提示'),
 ]);
 
 // 青少年模式黑名单
@@ -303,7 +318,6 @@ export const yongBlackListAppIDs = new Set([
   'com.ct.client', // 中国电信
   'me.ele', // 饿了么
   'com.tencent.qqmusic', // QQ音乐
-  ...filterAppsByGroup(apps, '青少年模式'),
 ]);
 
 // 全局规则白名单（由于系统应用默认禁用全局规则，所以对系统应用启用白名单模式）
@@ -319,6 +333,7 @@ export const openAdWhiteListAppIDs = new Set([
   'com.tencent.southpole.appstore', // 黑鲨应用市场
   'com.heytap.browser', // 一加浏览器
   'com.heytap.themestore', // oppo主题商店
+  'com.bbk.theme', // vivo主题商店
 ]);
 
 // 更新提示白名单

@@ -5,35 +5,6 @@ export default defineGkdApp({
   name: '百度网盘-三星版本',
   groups: [
     {
-      key: -1,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      actionMaximumKey: 0,
-      priorityTime: 10000,
-      rules: [
-        {
-          key: 0,
-          fastQuery: true,
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/e88a7ab4-0aeb-4472-a49b-3252da21ae33',
-          snapshotUrls: 'https://i.gkd.li/i/12738323',
-        },
-        {
-          key: 1,
-          anyMatches: [
-            '@View[clickable=true][text=null][visibleToUser=true] + TextView[index=parent.childCount.minus(1)][text=null] <n FrameLayout[childCount>2] >(7,8,9,10) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑"][visibleToUser=true]',
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][text=null][visibleToUser=true] + TextView[index=parent.childCount.minus(1)][text=null][visibleToUser=true]',
-          ],
-          exampleUrls:
-            'https://m.gkd.li/57941037/7f1babd6-7da3-4733-aca9-80ddf3c0a84e',
-          snapshotUrls: 'https://i.gkd.li/i/14596658',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
