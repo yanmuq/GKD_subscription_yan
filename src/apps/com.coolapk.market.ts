@@ -20,9 +20,10 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          fastQuery: true,
           anyMatches: [
-            '@View[clickable=true][text=null][visibleToUser=true] + TextView[index=parent.childCount.minus(1)][text=null] <n FrameLayout[childCount>2] >(7,8,9,10) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑"][visibleToUser=true]',
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][text=null][visibleToUser=true] + TextView[index=parent.childCount.minus(1)][text=null][visibleToUser=true]',
+            '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][text=null] <n FrameLayout[childCount>2] >(7,8,9,10) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑"][visibleToUser=true]',
+            'FrameLayout > FrameLayout[childCount>2] > @View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][text=null][visibleToUser=true]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/12503773',
@@ -77,10 +78,15 @@ export default defineGkdApp({
         },
         {
           preKeys: [0],
-          matches: '@[clickable=true] > [text="不感兴趣"]',
+          anyMatches: [
+            '@[clickable=true] > [text="不感兴趣"][visibleToUser=true]',
+            '[text="不感兴趣"][clickable=true][visibleToUser=true]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/19004649',
-            'https://i.gkd.li/i/19004661',
+            'https://i.gkd.li/i/19643258',
+            'https://i.gkd.li/i/19643262',
+            'https://i.gkd.li/i/19534649',
           ],
         },
       ],
@@ -132,6 +138,21 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16448265',
             'https://i.gkd.li/i/16448385',
           ],
+        },
+      ],
+    },
+    {
+      key: 5,
+      name: '局部广告-信息流广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.view.search.SuperSearchResultActivity',
+          matches:
+            '@[desc="关闭"] <<n [vid="item_view"] <<n [vid="to_native_ad_view"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/efd366d9-1c66-4c35-b164-6f91a623e2f2',
+          snapshotUrls: 'https://i.gkd.li/i/19643150',
         },
       ],
     },

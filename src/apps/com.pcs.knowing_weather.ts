@@ -1,21 +1,22 @@
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
-  id: 'com.hanweb.android.sdzwfw.activity',
-  name: '爱山东',
+  id: 'com.pcs.knowing_weather',
+  name: '知天气',
   groups: [
     {
       key: 0,
       name: '开屏广告',
-      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
       rules: [
         {
-          matches: '[text*="关闭"][text.length<=10]',
-          snapshotUrls: 'https://i.gkd.li/i/13407227',
+          fastQuery: true,
+          matches: '[vid="btn_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/68883ff3-cc5a-46a1-9258-bfeff208dbee',
+          snapshotUrls: 'https://i.gkd.li/i/19832565',
         },
       ],
     },
