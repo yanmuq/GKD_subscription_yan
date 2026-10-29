@@ -28,7 +28,6 @@ https://raw.githubusercontent.com/yanmuq/GKD_subscription_yan/main/dist/AIsouler
 <!-- subscription-stats:end -->
 
 - [已发布应用与规则清单](./dist/README.md)
-- [待确认的下一轮精简名单](./docs/current/pruning-plan.md)
 - [当前维护任务与优化边界](./docs/current/maintenance.md)
 
 ## 检查与发布
@@ -49,7 +48,7 @@ pnpm run build
 
 先阅读 [AGENTS.md](./AGENTS.md) 与 [贡献指南](./CONTRIBUTING.md)。修改规则时参照 [GKD 官方 API](https://gkd.li/api/)、[查询优化](https://gkd.li/guide/optimize) 和 [快照审查工具](https://i.gkd.li/)。规则保留快照与图片链接。
 
-按个人使用需求精简细分用途应用，未决定的候选保留在待确认清单中。当前维护范围以 `src/apps/` 为准。全局规则的应用保护名单具有防止误触的作用，不随应用规则精简一起删除。
+按个人使用需求精简细分用途应用；后续候选先列名单，获得明确删除指令后再执行。当前维护范围以 `src/apps/` 为准。全局规则的应用保护名单具有防止误触的作用，不随应用规则精简一起删除。
 
 ## 致谢
 
