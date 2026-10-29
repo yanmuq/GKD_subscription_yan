@@ -1,13 +1,12 @@
 {
-  "name": "@aisouler/gkd_subscription",
+  "name": "yanmuq-aisouler-gkd",
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "gkd": {
     "outDir": "dist",
     "file": "AIsouler_gkd.json5",
-    "versionFile": "AIsouler_gkd.version.json5",
-    "changelog": "CHANGELOG.md",
-    "README.md": "README.md"
+    "versionFile": "AIsouler_gkd.version.json5"
   },
   "scripts": {
     "postinstall": "simple-git-hooks",
@@ -30,10 +29,6 @@
       "prettier --cache --write"
     ]
   },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
   "files": [
     "./dist"
   ],
@@ -42,7 +37,7 @@
     "@commitlint/config-conventional": "20.2.0",
     "@commitlint/types": "20.2.0",
     "@eslint/js": "9.39.1",
-    "@gkd-kit/api": "0.8.0",
+    "@gkd-kit/api": "0.9.3",
     "@gkd-kit/define": "0.0.1",
     "@gkd-kit/tools": "0.8.0",
     "@types/node": "25.0.0",
@@ -58,7 +53,7 @@
     "typescript-eslint": "8.49.0"
   },
   "volta": {
-    "node": "20.13.1"
+    "node": "24.22.1"
   },
   "packageManager": "pnpm@10.25.0",
   "engineStrict": true,

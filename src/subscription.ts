@@ -17,11 +17,11 @@ apps.forEach((appConfig) => {
 
 export default defineGkdSubscription({
   id: 666,
-  name: 'AIsouler的GKD订阅-已停止维护',
+  name: '言木七的GKD订阅（AIsouler维护版）',
   version: 0,
-  author: 'AIsouler',
+  author: 'yanmuq / AIsouler及原贡献者',
   checkUpdateUrl: './AIsouler_gkd.version.json5',
-  supportUri: 'https://github.com/AIsouler/GKD_subscription/issues/new/choose',
+  supportUri: 'https://github.com/yanmuq/GKD_subscription_yan/issues',
   categories,
   globalGroups,
   apps: rawApps,

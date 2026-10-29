@@ -15,7 +15,7 @@ export default defineGkdApp({
         {
           activityIds: '.ui.activity.MainActivity',
           matches:
-            '[vid="ad_content"] < * - [clickable=true][vid="not_prompt_again"]',
+            '[vid="ad_content"] < * - [vid="not_prompt_again"][clickable=true]',
           exampleUrls: 'https://e.gkd.li/34995c89-e659-4a38-b4ed-9cb1514323b2',
           snapshotUrls: 'https://i.gkd.li/i/19718306',
         },

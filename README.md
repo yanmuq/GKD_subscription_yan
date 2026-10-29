@@ -1,85 +1,54 @@
-# @AIsouler/GKD_subscription
+# 言木七的 GKD 订阅（AIsouler 维护版）
 
----
+基于 [AIsouler/GKD_subscription](https://github.com/AIsouler/GKD_subscription) 的个人维护分支，由 [yanmuq](https://github.com/yanmuq) 维护。保留原作者及所有贡献者署名，仅供个人学习使用，沿用原仓库“禁止在国内平台传播”的声明。
 
-## 本仓库已停止维护
+## 订阅与启用
 
-> 2026.02.12
+将下列地址添加到 GKD：
 
-建议使用 [GKD订阅模板](https://github.com/gkd-kit/subscription-template) 构建自己的订阅，如果仅供个人使用，维护量其实很小，并不会占用您太多时间。
-
-本仓库包含大量早期不完善的规则，以及一些为兼容特殊场景、不同应用版本和不同系统环境而编写的非常抽象的规则，您可能并不需要这些规则，但它们可能会影响查询效率。
-
-最后，维护这个仓库已经2年时间了，期间也学会了不少东西，最初是凭借着一股热情在维持，但热情终究会耗尽，是时候说再见了。
-
----
-
-## 声明
-
-- **禁止在国内平台传播**
-- **本仓库仅供本人学习使用**
-- **精力有限，随缘更新**
-
-## 说明
-
-- **致力于编写效率最高、误触最低、覆盖最全面的规则**
-
-- **已适配的规则需要等待发布更新才能生效，北京时间每天凌晨3点会自动发布更新，如果规则没有改动则不会发布更新，在 `GKD订阅界面` 下拉就能检测是否有更新 -> [点击查看更新日志](https://github.com/AIsouler/GKD_subscription/releases)**
-
-- **仅启用 `开屏广告` 一类规则，其它所有规则均需用户手动打开，规则类别里可以批量开启某一类规则，建议按需开启规则，不要无脑开启规则，开启过多规则可能造成规则阻塞从而导致规则触发缓慢甚至不触发，并且规则开启越多耗电也越多 -> [点击查看耗电说明](https://gkd.li/guide/faq#power)**
-
-- **请求适配或报告问题 -> [点击反馈](https://github.com/AIsouler/GKD_subscription/issues/new/choose)**
-
-- **交流讨论（不要在这里反馈） -> [点击查看或开启讨论](https://github.com/AIsouler/GKD_subscription/discussions)**
-
-- **欢迎贡献规则，提交pr前请确认您已仔细阅读 [贡献指南](./CONTRIBUTING.md) 和 [API文档](https://gkd.li/api/)，规则编写可参考 [个人收集的通用规则以及适用场景](./Selectors.md)**
-
-## 订阅
-
-复制以下任意一个链接到 GKD 即可使用本订阅规则
-
-- npmmirror源（国内镜像，推荐大陆用户使用）
-
-```txt
-https://registry.npmmirror.com/@aisouler/gkd_subscription/latest/files/dist/AIsouler_gkd.json5
+```text
+https://raw.githubusercontent.com/yanmuq/GKD_subscription_yan/main/dist/AIsouler_gkd.json5
 ```
 
-- GitHub源
+订阅 ID 保持为 `666`，用于替换原 AIsouler 订阅。已使用原订阅时，请改为上述更新地址；不要同时使用原版与本维护版。这里不发布到原作者的 npm 包或镜像。
 
-```txt
-https://raw.githubusercontent.com/AIsouler/GKD_subscription/main/dist/AIsouler_gkd.json5
+默认只开启“开屏广告”类别，其他类别按需开启。此订阅与 [言木七的附加订阅（ID 808）](https://github.com/yanmuq/muqi_gkd) 独立维护；同一应用的相同用途规则只在一个订阅中启用，以免重复点击。云闪付的应用规则统一等待 500 毫秒后通过 `clickCenter` 点击，实际是否仍出现应用提示需在设备上确认。
+
+<!-- subscription-stats:start -->
+
+| 项目 | 数量 |
+| --- | --- |
+| 版本 | v407 |
+| 应用 | 880 |
+| 应用规则组 | 2066 |
+| 全局规则组 | 3 |
+
+<!-- subscription-stats:end -->
+
+- [当前应用与规则清单](./dist/README.md)
+- [待确认的下一轮精简名单](./docs/current/pruning-plan.md)
+- [当前维护任务与优化边界](./docs/current/maintenance.md)
+
+## 检查与发布
+
+推送后运行检查，不立即发布。每周三北京时间 03:20 检查规则、构建脚本和构建配置；有变动才构建发布，没有变动就跳过。也可在 GitHub Actions 手动运行 `build_release`。
+
+构建只更新当前订阅、版本索引、规则清单和本页统计。用户在 GKD 订阅界面下拉即可检查更新。
+
+## 开发
+
+使用 Node.js 24 与项目锁定的 pnpm 10.25.0：
+
+```sh
+pnpm install --frozen-lockfile
+pnpm run check
+pnpm run build
 ```
 
-- 当前版本: v406
+先阅读 [AGENTS.md](./AGENTS.md) 与 [贡献指南](./CONTRIBUTING.md)。修改规则时参照 [GKD 官方 API](https://gkd.li/api/)、[查询优化](https://gkd.li/guide/optimize) 和 [快照审查工具](https://i.gkd.li/)。规则保留快照与图片链接。
 
-- 当前订阅文件已适配 886 个应用，共有 2074 应用规则组，3 全局规则组
+首轮只删除明确非常小众的应用，拿不准的保留在待确认清单中。全局规则的应用保护名单具有防止误触的作用，不随应用规则精简一起删除。
 
-- 查看 [适配 APP 列表](./dist/README.md)
+## 致谢
 
-- 使用 [GKD订阅模板](https://github.com/gkd-kit/subscription-template) 快速构建自己的订阅
-
-- 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
-
-## 交流群
-
-- TG群组：<https://t.me/+8L4eHePgYEZmY2M9>
-
-## 其他
-
-- 在 [GKD官网](https://gkd.li/) 查看 [GKD基础使用教程](https://gkd.li/guide/) 、[常见问题](https://gkd.li/guide/faq) 以及 [API文档](https://gkd.li/api/)
-
-- 查看 [规则编写教程](https://github.com/Snoopy1866/notebook/blob/main/04%20Others/GKD%20%E8%A7%84%E5%88%99%E7%BC%96%E5%86%99%E6%95%99%E7%A8%8B/gkd-rule-tutorial.md) By [@Snoopy1866](https://github.com/Snoopy1866)
-
-- 使用 [GKD网页审查工具增强脚本](https://github.com/adproqwq/MakeGKDInspectBetter) 可以高度自定义从网页复制出来的规则，提高规则编写效率
-
-## 感谢以下项目
-
-[gkd-kit/subscription](https://github.com/gkd-kit/subscription)
-
-## 感谢以下开发者的贡献
-
-![img](https://contrib.rocks/image?repo=AIsouler/GKD_subscription&_v=406)
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=AIsouler/GKD_subscription&type=Date)](https://star-history.com/#AIsouler/GKD_subscription&Date)
+感谢 [AIsouler](https://github.com/AIsouler)、[原仓库贡献者](https://github.com/AIsouler/GKD_subscription/graphs/contributors) 和 [gkd-kit](https://github.com/gkd-kit) 提供的规则、工具及文档。

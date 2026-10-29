@@ -2,8 +2,15 @@ name: build_release
 
 on:
   schedule:
-    - cron: '0 19 * * *'
+    - cron: '20 19 * * 2' # 北京时间周三凌晨 03:20
   workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-release-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   check_changes:
@@ -11,88 +18,80 @@ jobs:
     outputs:
       changed: ${{ steps.changes.outputs.changed }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
       - id: changes
         run: |
-          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-              echo "changed=true" >> $GITHUB_OUTPUT
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          previous_tag=$(git describe --tags --abbrev=0 2>/dev/null || true)
+          if [ -z "$previous_tag" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           else
-            prev_tag=$(git describe --tags --abbrev=0 2>/dev/null || echo "none")
-            if [ "$prev_tag" == "none" ]; then
-              echo "changed=true" >> $GITHUB_OUTPUT
+            changes=$(git diff --name-only "$previous_tag" HEAD -- src scripts package.json pnpm-lock.yaml tsconfig.json .github/workflows/build_release.yml)
+            if [ -z "$changes" ]; then
+              echo "No build input changes."
+              echo "changed=false" >> "$GITHUB_OUTPUT"
             else
-              if git diff --exit-code $prev_tag HEAD -- src; then
-                echo "No changes detected in 'src' directory between $prev_tag and the latest commit."
-                echo "changed=false" >> $GITHUB_OUTPUT
-              else
-                echo "changed=true" >> $GITHUB_OUTPUT
-              fi
+              echo "changed=true" >> "$GITHUB_OUTPUT"
             fi
           fi
 
   build_release:
     needs: check_changes
-    if: ${{ needs.check_changes.outputs.changed == 'true' }}
+    if: needs.check_changes.outputs.changed == 'true'
     runs-on: ubuntu-latest
-    outputs:
-      version: ${{ steps.version.outputs.version }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
-
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
-          node-version: 25
-
-      - uses: pnpm/action-setup@v4
-
-      - run: pnpm install
-
-      - run: pnpm run build
-
+          node-version: 24
+      - name: Set up pnpm
+        run: npm install --global pnpm@10.25.0
+      - run: pnpm install --frozen-lockfile
+      - name: Build current subscription
+        id: build
+        run: |
+          before=""
+          if [ -f dist/AIsouler_gkd.json5 ]; then
+            before=$(git hash-object dist/AIsouler_gkd.json5)
+          fi
+          pnpm run build
+          after=$(git hash-object dist/AIsouler_gkd.json5)
+          if [ "$before" = "$after" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
       - id: version
         run: |
-          version=$(node -e "import('@gkd-kit/tools').then((m) => m.stdoutGkdVersion());")
-          echo "version=${version}" >> "$GITHUB_OUTPUT"
-
+          version=$(node --input-type=module -e "import fs from 'node:fs'; import JSON5 from 'json5'; const pkg=JSON.parse(fs.readFileSync('package.json','utf8')); const index=JSON5.parse(fs.readFileSync(pkg.gkd.outDir+'/'+pkg.gkd.versionFile,'utf8')); console.log(index.version);")
+          echo "version=$version" >> "$GITHUB_OUTPUT"
       - name: Git commit
         id: commit
         run: |
           git config --local user.email github-actions[bot]@users.noreply.github.com
           git config --local user.name github-actions[bot]
-          git status
-          git add .
-          git commit -a -m "chore: v${{steps.version.outputs.version}}"
-        continue-on-error: true
-
+          git add README.md dist/README.md dist/AIsouler_gkd.json5 dist/AIsouler_gkd.version.json5
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "chore: v${{ steps.version.outputs.version }}"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
       - name: Git push
-        if: ${{ steps.commit.outcome == 'success' }}
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
-          tags: true
-
+        if: steps.commit.outputs.changed == 'true'
+        run: git push origin HEAD:${{ github.ref_name }}
       - name: Create Release
-        id: create_release
-        if: ${{ steps.commit.outcome == 'success' }}
-        uses: softprops/action-gh-release@v2
+        if: steps.commit.outputs.changed == 'true' && steps.build.outputs.changed == 'true'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: v${{ steps.version.outputs.version }}
-          release_name: Release ${{ steps.version.outputs.version }}
-          body_path: ./dist/CHANGELOG.md
-
-      - name: Publish package
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        if: ${{ steps.commit.outcome == 'success' && env.NPM_TOKEN != '' }}
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.version.outputs.version }}
         run: |
-          pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
-          node -e "import('@gkd-kit/tools').then((m) => m.updatePkgVersion());"
-          pnpm publish --no-git-checks
-          node -e "import('@gkd-kit/tools').then((m) => m.syncNpmmirror());"
+          gh release create "v$VERSION" --target "$(git rev-parse HEAD)" --title "Release $VERSION" --notes "当前订阅 v$VERSION" dist/AIsouler_gkd.json5 dist/AIsouler_gkd.version.json5
