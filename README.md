@@ -14,6 +14,8 @@ https://raw.githubusercontent.com/yanmuq/GKD_subscription_yan/main/dist/AIsouler
 
 默认只开启“开屏广告”类别，其他类别按需开启。此订阅与 [言木七的附加订阅（ID 808）](https://github.com/yanmuq/muqi_gkd) 独立维护；同一应用的相同用途规则只在一个订阅中启用，以免重复点击。云闪付的应用规则统一等待 500 毫秒后通过 `clickCenter` 点击，实际是否仍出现应用提示需在设备上确认。
 
+以下为已发布订阅的统计；尚未发布的源码调整会在下一次构建时合入。
+
 <!-- subscription-stats:start -->
 
 | 项目 | 数量 |
@@ -25,7 +27,7 @@ https://raw.githubusercontent.com/yanmuq/GKD_subscription_yan/main/dist/AIsouler
 
 <!-- subscription-stats:end -->
 
-- [当前应用与规则清单](./dist/README.md)
+- [已发布应用与规则清单](./dist/README.md)
 - [待确认的下一轮精简名单](./docs/current/pruning-plan.md)
 - [当前维护任务与优化边界](./docs/current/maintenance.md)
 
@@ -47,7 +49,7 @@ pnpm run build
 
 先阅读 [AGENTS.md](./AGENTS.md) 与 [贡献指南](./CONTRIBUTING.md)。修改规则时参照 [GKD 官方 API](https://gkd.li/api/)、[查询优化](https://gkd.li/guide/optimize) 和 [快照审查工具](https://i.gkd.li/)。规则保留快照与图片链接。
 
-首轮只删除明确非常小众的应用，拿不准的保留在待确认清单中。全局规则的应用保护名单具有防止误触的作用，不随应用规则精简一起删除。
+按个人使用需求精简细分用途应用，未决定的候选保留在待确认清单中。当前维护范围以 `src/apps/` 为准。全局规则的应用保护名单具有防止误触的作用，不随应用规则精简一起删除。
 
 ## 致谢
 
