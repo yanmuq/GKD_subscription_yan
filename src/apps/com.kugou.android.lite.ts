@@ -71,7 +71,7 @@ export default defineGkdApp({
           activityIds:
             'com.kugou.framework.musicfees.ui.feeintercept.FeeInterceptWebActivity',
           matches:
-            'WebView > [id="body"] > [id="root"] >2 View > Image[index=0][clickable=true][visibleToUser=true][width<70 && width<70]',
+            'WebView > [id="body"] > [id="root"] >2 View > Image[index=0][clickable=true][visibleToUser=true][width<70]',
           snapshotUrls: 'https://i.gkd.li/i/25022292',
         },
       ],

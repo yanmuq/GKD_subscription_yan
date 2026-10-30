@@ -104,7 +104,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
           matches:
-            '@ViewGroup[clickable=true][width <120 && width<120][childCount=0] <2 ViewGroup < ViewGroup < ViewGroup < FrameLayout < FrameLayout < [id="android:id/content"]',
+            '@ViewGroup[clickable=true][width<120][childCount=0] <2 ViewGroup < ViewGroup < ViewGroup < FrameLayout < FrameLayout < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/24842488',
         },
       ],
