@@ -35,7 +35,7 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '持续-页面内广告-卡片广告',
+      name: '持续-页面内广告-卡片广告-分步关闭',
       enable: false,
       desc: '点击[关闭]-点击[直接关闭]/[不感兴趣]',
       rules: [

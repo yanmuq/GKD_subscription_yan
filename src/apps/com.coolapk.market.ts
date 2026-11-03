@@ -54,7 +54,7 @@ export default defineGkdApp({
     },
     {
       key: 0,
-      name: '持续-页面内广告-信息流广告',
+      name: '持续-页面内广告-信息流广告-分步关闭',
       enable: false,
       fastQuery: true,
       activityIds: [

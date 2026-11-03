@@ -95,7 +95,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '持续-页面内广告',
+      name: '持续-页面内广告-分步关闭',
       enable: false,
       fastQuery: true,
       rules: [

@@ -77,7 +77,7 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '持续-页面内广告-悬浮广告',
+      name: '持续-页面内广告-悬浮广告-分步关闭',
       enable: false,
       fastQuery: true,
       activityIds: 'com.yxcorp.gifshow.HomeActivity',

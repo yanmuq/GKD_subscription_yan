@@ -52,7 +52,7 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '持续-页面内广告-卡片广告',
+      name: '持续-页面内广告-卡片广告-分步关闭',
       enable: false,
       fastQuery: true,
       activityIds: 'com.nowcasting.activity.WeatherActivity',

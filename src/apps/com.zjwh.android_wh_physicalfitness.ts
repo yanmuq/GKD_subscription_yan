@@ -195,7 +195,7 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '持续-页面内广告-卡片广告',
+      name: '持续-页面内广告-卡片广告-分步关闭',
       enable: false,
       desc: '点击关闭-不感兴趣',
       activityIds: '.mvi.home.HomeActivity',
