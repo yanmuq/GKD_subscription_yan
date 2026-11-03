@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-内部弹窗广告',
+      name: '持续-全屏广告-内部弹窗广告',
+      enable: false,
       activityIds: 'com.davy.commonlibrary.utils.DialogUtil',
       rules: [
         {

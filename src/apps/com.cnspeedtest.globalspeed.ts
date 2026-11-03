@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '权限提示-定位权限',
+      name: '持续-应用提示弹窗-定位权限',
+      enable: false,
       desc: '点击[取消]',
       rules: [
         {

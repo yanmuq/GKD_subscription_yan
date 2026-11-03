@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '更新提示',
-      matchTime: 10000,
+      name: '限时-应用提示-更新提示',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -21,7 +22,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -34,8 +36,9 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '权限提示-通知权限',
-      matchTime: 10000,
+      name: '限时-应用提示-通知权限',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
+      name: '限时-开屏广告',
+      enable: true,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -32,7 +33,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '分段广告-小说阅读页面-卡片广告',
+      name: '持续-页面内广告-小说阅读页面-卡片广告',
+      enable: false,
       activityIds: 'com.tencent.mtt.MainActivity',
       rules: [
         {
@@ -65,7 +67,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '分段广告-小说阅读页面-视频广告',
+      name: '持续-页面内广告-小说阅读页面-视频广告',
+      enable: false,
       activityIds: 'com.qq.e.tg.RewardvideoPortraitADActivity',
       rules: [
         {

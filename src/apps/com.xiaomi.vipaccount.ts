@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '更新提示',
+      name: '持续-更新提示',
+      enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -20,7 +21,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-评论区卡片广告',
+      name: '持续-页面内广告-评论区卡片广告',
+      enable: false,
       rules: [
         {
           activityIds: 'com.xiaomi.vipaccount.newbrowser.NormalWebActivity',
@@ -31,7 +33,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-签到弹窗',
+      name: '持续-全屏广告-签到弹窗',
+      enable: false,
       rules: [
         {
           activityIds: 'com.xiaomi.vipaccount.newbrowser.NormalWebActivity',
@@ -42,9 +45,9 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-公告板弹窗',
+      name: '持续-应用提示弹窗-公告板弹窗',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '通知提示-系统公告',
+      name: '限时-应用提示-系统公告',
+      enable: false,
       desc: '点击[确定]',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

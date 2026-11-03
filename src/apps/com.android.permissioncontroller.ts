@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '权限提示-定位权限',
+      name: '系统权限-定位权限',
+      enable: false,
       desc: '点击不允许',
       rules: [
         {

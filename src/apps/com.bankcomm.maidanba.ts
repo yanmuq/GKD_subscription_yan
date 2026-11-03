@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '评价提示-好评弹窗',
+      name: '限时-应用提示-好评弹窗',
+      enable: false,
       desc: '点击关闭',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -26,9 +27,10 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '通知提示-网络代理提示弹窗',
+      name: '限时-应用提示-网络代理提示弹窗',
+      enable: false,
       desc: '点击[继续使用]',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

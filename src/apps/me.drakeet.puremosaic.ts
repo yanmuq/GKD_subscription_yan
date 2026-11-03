@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-解锁高级功能',
+      name: '持续-全屏广告-解锁高级功能',
+      enable: false,
       desc: '点击[不]',
       rules: [
         {

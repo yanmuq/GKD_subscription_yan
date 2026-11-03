@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: -1,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
@@ -36,7 +37,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '分段广告-信息流广告',
+      name: '持续-页面内广告-信息流广告',
+      enable: false,
       desc: '点击关闭-点击内容不感兴趣',
       fastQuery: true,
       rules: [
@@ -136,7 +138,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
       actionMaximum: 1,
@@ -163,7 +166,8 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
       rules: [
@@ -201,7 +205,8 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -237,7 +242,8 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '局部广告-信息流广告',
+      name: '持续-页面内广告-信息流广告',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
       rules: [
@@ -286,7 +292,8 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      name: '局部广告-悬浮广告',
+      name: '持续-页面内广告-悬浮广告',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -325,8 +332,8 @@ export default defineGkdApp({
     },
     {
       key: 16,
-      name: '更新提示',
-      matchTime: 10000,
+      name: '持续-更新提示',
+      enable: false,
       fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
@@ -359,7 +366,8 @@ export default defineGkdApp({
     },
     {
       key: 17,
-      name: '功能类-热榜页自动点击[展开更多]',
+      name: '持续-功能操作-热榜页自动点击[展开更多]',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -373,7 +381,8 @@ export default defineGkdApp({
     },
     {
       key: 18,
-      name: '功能类-自动展开回答',
+      name: '持续-功能操作-自动展开回答',
+      enable: false,
       desc: '自动点击展开',
       rules: [
         {
@@ -393,7 +402,8 @@ export default defineGkdApp({
     },
     {
       key: 19,
-      name: '评价提示-评论区氛围评价卡片',
+      name: '持续-应用提示弹窗-评论区氛围评价卡片',
+      enable: false,
       desc: '点击关闭',
       actionMaximum: 1,
       rules: [

@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-免流提示',
+      name: '持续-应用提示弹窗-免流提示',
+      enable: false,
       rules: [
         {
           activityIds: 'com.vivo.browser.pendant.PendantActivity',
@@ -18,7 +19,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-天气详情页面',
+      name: '持续-页面内广告-天气详情页面',
+      enable: false,
       rules: [
         {
           key: 0,

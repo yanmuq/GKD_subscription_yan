@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '全屏广告-关闭花呗升级弹窗',
+      name: '持续-应用提示弹窗-关闭花呗升级弹窗',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -48,7 +49,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '权限提示-定位权限',
+      name: '持续-应用提示弹窗-定位权限',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -82,7 +84,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -116,9 +119,9 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '更新提示-版本更新弹窗',
+      name: '持续-更新提示-版本更新弹窗',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -165,7 +168,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-小组件弹窗',
+      name: '持续-应用提示弹窗-小组件弹窗',
+      enable: false,
       desc: '点击[近期不再提醒我]',
       rules: [
         {
@@ -198,7 +202,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '全屏广告-借呗消费信贷协议',
+      name: '持续-应用提示弹窗-借呗消费信贷协议',
+      enable: false,
       desc: '点击X',
       rules: [
         {
@@ -212,7 +217,8 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '功能类-支付后自动点击完成',
+      name: '持续-功能操作-支付后自动点击完成',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -235,7 +241,8 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -284,7 +291,8 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '全屏广告-支付后的推荐弹窗',
+      name: '持续-全屏广告-支付后的推荐弹窗',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -307,7 +315,8 @@ export default defineGkdApp({
     },
     {
       key: 16,
-      name: '分段广告-扫码乘车后出现的广告',
+      name: '持续-页面内广告-扫码乘车后出现的广告',
+      enable: false,
       desc: '点击[展开更多]-点击[对该内容不感兴趣]',
       fastQuery: true,
       activityIds:
@@ -337,7 +346,8 @@ export default defineGkdApp({
     },
     {
       key: 17,
-      name: '全屏广告-关闭免密支付广告',
+      name: '持续-功能操作-关闭免密支付开关及开通提示',
+      enable: false,
       actionMaximum: 1,
       rules: [
         {
@@ -368,7 +378,8 @@ export default defineGkdApp({
     },
     {
       key: 19,
-      name: '分段广告-服务消息页面卡片广告',
+      name: '持续-页面内广告-服务消息页面卡片广告',
+      enable: false,
       desc: '点击关闭-不感兴趣',
       fastQuery: true,
       activityIds: [
@@ -401,7 +412,8 @@ export default defineGkdApp({
     },
     {
       key: 21,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
       rules: [
@@ -455,7 +467,8 @@ export default defineGkdApp({
     },
     {
       key: 22,
-      name: '其他-蚂蚁理财社区-[加入同路人]弹窗',
+      name: '持续-应用提示弹窗-蚂蚁理财社区-[加入同路人]弹窗',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -472,7 +485,8 @@ export default defineGkdApp({
     },
     {
       key: 23,
-      name: '全屏广告-[银行卡还款服务升级]弹窗',
+      name: '持续-应用提示弹窗-[银行卡还款服务升级]弹窗',
+      enable: false,
       desc: '点击[放弃升级，直接付款]',
       rules: [
         {
@@ -488,10 +502,11 @@ export default defineGkdApp({
     },
     {
       key: 24,
-      name: '开屏广告-小程序开屏广告',
+      name: '持续-小程序开屏广告',
+      enable: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'app',
+      resetMatch: 'activity',
       priorityTime: 10000,
       rules: [
         {
@@ -507,7 +522,8 @@ export default defineGkdApp({
     },
     {
       key: 25,
-      name: '功能类-自动授权登录',
+      name: '持续-功能操作-自动授权登录',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -523,7 +539,8 @@ export default defineGkdApp({
     },
     {
       key: 26,
-      name: '局部广告-直播悬浮窗',
+      name: '持续-页面内广告-直播悬浮窗',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -553,7 +570,8 @@ export default defineGkdApp({
     },
     {
       key: 27,
-      name: '功能类-余额宝转出自动勾选[短期不再提示]',
+      name: '持续-功能操作-余额宝转出自动勾选[短期不再提示]',
+      enable: false,
       actionMaximum: 1,
       resetMatch: 'activity',
       rules: [
@@ -574,7 +592,8 @@ export default defineGkdApp({
     },
     {
       key: 28,
-      name: '功能类-自动领取会员积分',
+      name: '持续-功能操作-自动领取会员积分',
+      enable: false,
       desc: '点击[全部领取]',
       rules: [
         {
@@ -593,7 +612,8 @@ export default defineGkdApp({
     },
     {
       key: 29,
-      name: '功能类-无法访问时点击[返回]',
+      name: '持续-功能操作-无法访问时点击[返回]',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -620,7 +640,8 @@ export default defineGkdApp({
     },
     {
       key: 30,
-      name: '其他-滑动验证时返回',
+      name: '持续-功能操作-滑动验证时返回',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -636,7 +657,8 @@ export default defineGkdApp({
     },
     {
       key: 31,
-      name: '其他-开通刷脸支付弹窗',
+      name: '持续-应用提示弹窗-开通刷脸支付弹窗',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -652,7 +674,8 @@ export default defineGkdApp({
     },
     {
       key: 32,
-      name: '功能类-确认清理已选中的缓存',
+      name: '持续-功能操作-确认清理已选中的缓存',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -669,7 +692,8 @@ export default defineGkdApp({
     },
     {
       key: 33,
-      name: '青少年模式',
+      name: '持续-应用提示弹窗-青少年模式',
+      enable: false,
       rules: [
         {
           key: 0,

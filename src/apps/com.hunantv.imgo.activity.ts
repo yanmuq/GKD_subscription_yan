@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '分段广告-首页推荐广告',
+      name: '持续-页面内广告-首页推荐广告',
+      enable: false,
       activityIds: 'com.hunantv.imgo.activity.MainActivity',
       rules: [
         {
@@ -25,8 +26,9 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-弹窗广告',
-      matchTime: 10000,
+      name: '限时-全屏广告-弹窗广告',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -55,7 +57,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '局部广告-右侧悬浮广告',
+      name: '持续-页面内广告-右侧悬浮广告',
+      enable: false,
       activityIds: 'com.hunantv.imgo.activity.MainActivity',
       rules: [
         {
@@ -74,7 +77,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-视频播放时的广告',
+      name: '持续-全屏广告-视频播放时的广告',
+      enable: false,
       desc: '点击[关闭广告]',
       rules: [
         {

@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
@@ -22,7 +23,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-朋友推荐弹窗',
+      name: '持续-全屏广告-朋友推荐弹窗',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -39,7 +41,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-红包弹窗',
+      name: '持续-全屏广告-红包弹窗',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -58,7 +61,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '局部广告-悬浮广告',
+      name: '持续-页面内广告-悬浮广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -73,7 +77,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '分段广告-悬浮广告',
+      name: '持续-页面内广告-悬浮广告',
+      enable: false,
       fastQuery: true,
       activityIds: 'com.yxcorp.gifshow.HomeActivity',
       rules: [
@@ -93,7 +98,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '评价提示',
+      name: '持续-应用提示弹窗-评价提示',
+      enable: false,
       desc: 'x掉',
       rules: [
         {

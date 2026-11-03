@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: -1,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -48,8 +49,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '更新提示',
-      matchTime: 10000,
+      name: '持续-更新提示',
+      enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -63,7 +64,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '分段广告-评论区卡片广告',
+      name: '持续-页面内广告-评论区卡片广告',
+      enable: false,
       fastQuery: true,
       activityIds: '.ui.post.postdetail.PostDetailActivity',
       rules: [
@@ -85,9 +87,10 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '权限提示-通知权限',
+      name: '限时-应用提示-通知权限',
+      enable: false,
       desc: '系统通知弹窗，点击暂不开启',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: '.ui.home.page.PageMainActivity',

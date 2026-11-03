@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '青少年模式',
+      name: '持续-应用提示弹窗-青少年模式',
+      enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,
@@ -21,7 +22,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -34,8 +36,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '局部广告-右上角红包悬浮窗',
-      matchTime: 10000,
+      name: '持续-页面内广告-右上角红包悬浮窗',
+      enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -50,10 +52,11 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       desc: '点击[我再想想]',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -65,10 +68,11 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '评价提示',
+      name: '限时-应用提示-评价提示',
+      enable: false,
       desc: '点击取消',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -87,9 +91,10 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '全屏广告-集五福弹窗',
+      name: '限时-全屏广告-集五福弹窗',
+      enable: false,
       desc: '点击关闭',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -106,7 +111,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '点击[关闭广告]',
       rules: [
         {
@@ -121,7 +127,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '分段广告-信息流广告',
+      name: '持续-页面内广告-信息流广告',
+      enable: false,
       desc: '点击展开-点击[不感兴趣]',
       fastQuery: true,
       activityIds: 'com.sup.android.base.MainActivity',

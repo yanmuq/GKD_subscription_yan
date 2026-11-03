@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -22,7 +23,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -40,7 +42,6 @@ export default defineGkdApp({
           key: 1,
           name: '首页1',
           fastQuery: true,
-          matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: '.ui.MainActivity',
@@ -56,7 +57,6 @@ export default defineGkdApp({
           key: 2,
           name: '首页2',
           fastQuery: true,
-          matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
@@ -92,7 +92,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '局部广告-悬浮窗小广告',
+      name: '持续-页面内广告-悬浮窗小广告',
+      enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -118,7 +119,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '全屏广告-年底积分活动弹窗',
+      name: '持续-全屏广告-年底积分活动弹窗',
+      enable: false,
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -136,7 +138,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '功能类-自动签到',
+      name: '持续-功能操作-自动签到',
+      enable: false,
       desc: '点击[立即打卡]-关闭弹窗',
       rules: [
         {

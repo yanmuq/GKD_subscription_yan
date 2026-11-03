@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-关闭顶部[打开淘宝]横幅',
+      name: '持续-页面内广告-关闭顶部[打开淘宝]横幅',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -20,9 +21,10 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '其他-关闭切换站点提示',
+      name: '限时-应用提示-关闭切换站点提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

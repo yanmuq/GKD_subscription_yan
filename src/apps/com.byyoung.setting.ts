@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-忽略授权提示',
+      name: '持续-应用提示弹窗-忽略授权提示',
+      enable: false,
       activityIds: 'com.byyoung.setting.Welcome.PermissionActivity',
       rules: [
         {

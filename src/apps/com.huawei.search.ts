@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '分段广告-下拉搜索横幅广告',
+      name: '持续-页面内广告-下拉搜索横幅广告',
+      enable: false,
       fastQuery: true,
       activityIds: ['.HomeActivity', '.MainActivity'],
       rules: [
@@ -31,7 +32,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告-搜索框下广告',
+      name: '持续-页面内广告-搜索框下广告',
+      enable: false,
       desc: '点击x掉',
       rules: [
         {

@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '其他-设置默认浏览器提示',
+      name: '持续-应用提示弹窗-设置默认浏览器提示',
+      enable: false,
       desc: '点击取消',
       fastQuery: true,
       actionMaximum: 1,
@@ -21,7 +22,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '更新提示',
+      name: '持续-更新提示',
+      enable: false,
       desc: '点击取消',
       actionMaximum: 1,
       resetMatch: 'app',
@@ -44,7 +46,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -58,7 +61,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '局部广告',
+      name: '持续-页面内广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {

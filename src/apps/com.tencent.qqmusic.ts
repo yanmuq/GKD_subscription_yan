@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -34,7 +35,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       rules: [
         {
           key: 1,
@@ -124,7 +126,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -147,7 +150,6 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: [
@@ -181,7 +183,6 @@ export default defineGkdApp({
         {
           key: 3,
           fastQuery: true,
-          matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: '.activity.AppStarterActivity',
@@ -192,7 +193,6 @@ export default defineGkdApp({
         {
           key: 4,
           fastQuery: true,
-          matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: '.activity.AppStarterActivity',
@@ -243,7 +243,6 @@ export default defineGkdApp({
         },
         {
           key: 9,
-          matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: '.activity.AppStarterActivity',
@@ -255,9 +254,10 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '更新提示-内测体验弹窗',
+      name: '限时-应用提示-更新提示-内测体验弹窗',
+      enable: false,
       desc: '点击[不再提醒]',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -270,7 +270,8 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '评价提示-好评弹窗',
+      name: '持续-应用提示弹窗-好评弹窗',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
       actionMaximum: 1,
@@ -285,7 +286,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '分段广告-评论区广告',
+      name: '持续-页面内广告-评论区广告',
+      enable: false,
       desc: '点击右下角展开-点击[不感兴趣]',
       activityIds:
         'com.tencent.qqmusic.activity.base.FragmentActivityWithMinibar',
@@ -307,7 +309,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '其他-播放页[猜你也会喜欢]推荐',
+      name: '持续-应用提示弹窗-播放页[猜你也会喜欢]推荐',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {

@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-优惠券弹窗',
+      name: '持续-全屏广告-优惠券弹窗',
+      enable: false,
       desc: '点击[暂不需要]',
       actionMaximum: 1,
       resetMatch: 'app',

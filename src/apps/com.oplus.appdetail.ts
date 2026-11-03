@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-自动安装应用',
+      name: '持续-功能操作-自动安装应用',
+      enable: false,
       desc: '点击 ①继续安装 ②完成',
       fastQuery: true,
       rules: [
@@ -43,7 +44,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-安装中高风险应用',
+      name: '持续-功能操作-安装中高风险应用',
+      enable: false,
       fastQuery: true,
       activityIds: '.model.guide.ui.InstallGuideActivity',
       rules: [

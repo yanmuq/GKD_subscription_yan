@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '全屏广告-视频播放-跳过广告',
+      name: '持续-全屏广告-视频播放-跳过广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -28,7 +29,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '全屏广告-视频播放-赞助商广告',
+      name: '持续-全屏广告-视频播放-赞助商广告',
+      enable: false,
       fastQuery: true,
       activityIds: [
         'com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity',
@@ -48,7 +50,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-会员广告',
+      name: '持续-全屏广告-会员广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -68,7 +71,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -83,7 +87,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '功能类-自动翻译评论',
+      name: '持续-功能操作-自动翻译评论',
+      enable: false,
       desc: '评论区自动点击[翻译成中文]',
       rules: [
         {
@@ -104,7 +109,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '其他-关闭播放器辅助功能弹窗',
+      name: '持续-应用提示弹窗-关闭播放器辅助功能弹窗',
+      enable: false,
       desc: '点击[Dismiss]',
       rules: [
         {
@@ -119,7 +125,8 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '功能类-关闭视频播放结束后的推荐视频',
+      name: '持续-功能操作-关闭视频播放结束后的推荐视频',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -139,7 +146,8 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '局部广告',
+      name: '持续-页面内广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -153,7 +161,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '分段广告-播放页广告',
+      name: '持续-页面内广告-播放页广告',
+      enable: false,
       rules: [
         {
           key: 1,

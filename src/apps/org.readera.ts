@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '评价提示-分享提示',
+      name: '持续-应用提示弹窗-分享提示',
+      enable: false,
       desc: '点击右上角的x',
       rules: [
         {
@@ -20,7 +21,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告',
+      name: '持续-全屏广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -33,7 +35,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-高级版',
+      name: '持续-全屏广告-高级版',
+      enable: false,
       desc: '注意：此规则会关闭手动打开的高级版开通界面，但该界面有时会自动弹出',
       rules: [
         {

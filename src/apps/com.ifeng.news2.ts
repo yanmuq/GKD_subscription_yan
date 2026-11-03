@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '分段广告-信息流广告',
+      name: '持续-页面内广告-信息流广告',
+      enable: false,
       fastQuery: true,
       activityIds: [
         '.activity.IfengTabMainActivity',
@@ -44,9 +45,10 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '权限提示-定位权限',
+      name: '限时-应用提示-定位权限',
+      enable: false,
       desc: '点击取消',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

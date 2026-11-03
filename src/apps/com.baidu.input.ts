@@ -5,10 +5,11 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-创作祝福弹窗',
+      name: '限时-全屏广告-创作祝福弹窗',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       resetMatch: 'app',
       actionMaximum: 1,
       rules: [
@@ -21,9 +22,9 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-底部会员悬浮卡片',
+      name: '持续-页面内广告-底部会员悬浮卡片',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

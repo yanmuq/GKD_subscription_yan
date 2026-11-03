@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
+      name: '持续-全屏广告-开屏广告',
+      enable: true,
       fastQuery: true,
       // 该广告不止在开屏时出现
       // matchTime: 10000,

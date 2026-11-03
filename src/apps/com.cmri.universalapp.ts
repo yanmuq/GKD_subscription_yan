@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 5,
-      name: '全屏广告-弹窗广告',
+      name: '限时-全屏广告-弹窗广告',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -21,7 +22,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       fastQuery: true,
       matchTime: 10000,
       rules: [

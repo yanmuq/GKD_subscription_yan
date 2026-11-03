@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 10,
-      name: '全屏广告-首页红包弹窗',
+      name: '限时-全屏广告-首页红包弹窗',
+      enable: false,
       desc: '点击关闭',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.yxcorp.gifshow.HomeActivity',
@@ -34,7 +35,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '局部广告-首页左侧红包悬浮控件',
+      name: '持续-页面内广告-首页左侧红包悬浮控件',
+      enable: false,
       desc: '点击关闭',
       activityIds: 'com.yxcorp.gifshow.HomeActivity',
       rules: [
@@ -50,7 +52,8 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '功能类-推荐关注',
+      name: '持续-应用提示弹窗-推荐关注',
+      enable: false,
       desc: '自动点击"关闭/隐藏"',
       activityIds: 'com.yxcorp.gifshow.HomeActivity',
       rules: [
@@ -79,7 +82,8 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '评价提示',
+      name: '持续-应用提示弹窗-评价提示',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -95,7 +99,8 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '全屏广告-直播间广告',
+      name: '持续-全屏广告-直播间广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -111,7 +116,8 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      name: '分段广告-信息流广告',
+      name: '持续-页面内广告-信息流广告',
+      enable: false,
       fastQuery: true,
       activityIds: 'com.yxcorp.gifshow.HomeActivity',
       rules: [

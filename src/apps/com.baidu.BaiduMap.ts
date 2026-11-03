@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: -1,
-      name: '开屏广告',
+      name: '限时-开屏广告',
+      enable: true,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -31,7 +32,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '权限提示-定位权限',
+      name: '持续-应用提示弹窗-定位权限',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -63,9 +65,10 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -78,10 +81,11 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '权限提示-通知权限',
+      name: '限时-应用提示-通知权限',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -94,7 +98,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '功能类-通勤卡添加至桌面',
+      name: '持续-应用提示弹窗-通勤卡添加至桌面',
+      enable: false,
       desc: '点击取消',
       fastQuery: true,
       actionMaximum: 1,
@@ -111,7 +116,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '全屏广告',
+      name: '持续-全屏广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -123,7 +129,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '局部广告',
+      name: '持续-页面内广告',
+      enable: false,
       rules: [
         {
           key: 0,

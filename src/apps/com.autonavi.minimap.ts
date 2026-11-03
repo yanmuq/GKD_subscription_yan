@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: -1,
-      name: '开屏广告',
+      name: '限时-开屏广告',
+      enable: true,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
@@ -23,9 +24,10 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -46,7 +48,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '功能类-截屏分享',
+      name: '持续-应用提示弹窗-截屏分享',
+      enable: false,
       desc: '关闭截屏时app弹出的分享弹窗',
       rules: [
         {
@@ -60,8 +63,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '局部广告-首页上方消息提醒',
-      matchTime: 10000,
+      name: '持续-页面内广告-首页上方消息提醒',
+      enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.autonavi.map.activity.NewMapActivity',
@@ -84,7 +87,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '局部广告-首页签到卡片',
+      name: '持续-页面内广告-首页签到卡片',
+      enable: false,
       desc: '点击"x"',
       actionMaximum: 1,
       resetMatch: 'app',
@@ -100,7 +104,8 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -143,7 +148,8 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '全屏广告',
+      name: '持续-全屏广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -183,7 +189,8 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      name: '功能类-一键点亮角落',
+      name: '持续-功能操作-一键点亮角落',
+      enable: false,
       desc: '点击[一键点亮]',
       rules: [
         {
@@ -199,9 +206,9 @@ export default defineGkdApp({
     },
     {
       key: 16,
-      name: '权限提示-授权蓝牙',
+      name: '持续-应用提示弹窗-授权蓝牙',
+      enable: false,
       desc: '点击关闭',
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

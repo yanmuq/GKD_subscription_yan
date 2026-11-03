@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '功能类-功能体验邀请弹窗',
+      name: '持续-应用提示弹窗-功能体验邀请弹窗',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -24,7 +25,8 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '全屏广告-朋友推荐弹窗',
+      name: '持续-全屏广告-朋友推荐弹窗',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -39,10 +41,11 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '权限提示-通知权限',
+      name: '限时-应用提示-通知权限',
+      enable: false,
       desc: '点击暂不开启',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -55,7 +58,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '功能类-选择图片时自动勾选原图',
+      name: '持续-功能操作-选择图片时自动勾选原图',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -71,7 +75,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '全屏广告',
+      name: '持续-全屏广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -93,7 +98,8 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '全屏广告-添加桌面小组件',
+      name: '持续-应用提示弹窗-添加桌面小组件',
+      enable: false,
       desc: 'x掉',
       rules: [
         {

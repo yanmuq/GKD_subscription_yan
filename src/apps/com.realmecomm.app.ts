@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-自动签到',
+      name: '持续-功能操作-自动签到',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',

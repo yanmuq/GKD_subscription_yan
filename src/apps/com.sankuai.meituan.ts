@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -30,7 +31,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -111,7 +113,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '评价提示-订单调查弹窗',
+      name: '持续-应用提示弹窗-订单调查弹窗',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -137,7 +140,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '局部广告-悬浮广告',
+      name: '持续-页面内广告-悬浮广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -187,7 +191,8 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '权限提示-定位权限',
+      name: '持续-应用提示弹窗-定位权限',
+      enable: false,
       desc: '首页/外卖界面-"打开位置开关弹窗"-点击右侧x关闭',
       actionMaximum: 1,
       resetMatch: 'app',
@@ -223,10 +228,11 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '权限提示-通知权限',
+      name: '限时-应用提示-通知权限',
+      enable: false,
       desc: '点击跳过',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -242,7 +248,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '全屏广告-新人返场特惠',
+      name: '持续-全屏广告-新人返场特惠',
+      enable: false,
       desc: '点击左上角返回',
       rules: [
         {
@@ -257,7 +264,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '全屏广告-视频页弹窗广告',
+      name: '持续-全屏广告-视频页弹窗广告',
+      enable: false,
       desc: '点击X',
       fastQuery: true,
       activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
@@ -281,7 +289,8 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '功能类-付款后自动点击完成',
+      name: '持续-功能操作-付款后自动点击完成',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -310,7 +319,8 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '局部广告-直播讲解悬浮窗',
+      name: '持续-页面内广告-直播讲解悬浮窗',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {

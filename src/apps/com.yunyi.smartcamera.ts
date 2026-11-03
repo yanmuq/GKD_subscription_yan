@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告',
+      name: '持续-全屏广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -52,7 +53,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告',
+      name: '持续-页面内广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -71,7 +73,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       rules: [
         {
           key: 0,

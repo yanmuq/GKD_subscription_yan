@@ -6,9 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '权限提示',
+      name: '持续-应用提示弹窗-权限提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -21,9 +21,10 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '权限提示-通知权限',
+      name: '限时-应用提示-通知权限',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

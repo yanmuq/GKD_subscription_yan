@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '分段广告-信息流广告',
+      name: '持续-页面内广告-信息流广告',
+      enable: false,
       desc: '点击卡片广告右上角x图标,点击[不感兴趣]',
       fastQuery: true,
       activityIds: [
@@ -40,9 +41,10 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '评价提示-APP评分弹窗',
+      name: '限时-应用提示-APP评分弹窗',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
@@ -25,8 +26,9 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '全屏广告-弹窗广告',
-      matchTime: 10000,
+      name: '限时-全屏广告-弹窗广告',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -44,9 +46,10 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '通知提示-VPN风险弹窗',
+      name: '限时-应用提示-VPN风险弹窗',
+      enable: false,
       desc: '点击[知晓风险，继续使用]',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

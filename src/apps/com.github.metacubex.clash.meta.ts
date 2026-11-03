@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-代理页面自动点击延迟测试',
+      name: '持续-功能操作-代理页面自动点击延迟测试',
+      enable: false,
       matchTime: 10000,
       actionMaximum: 1,
       rules: [

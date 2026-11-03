@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       desc: '点击[取消]',
       fastQuery: true,
       rules: [
@@ -31,7 +32,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -55,7 +57,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '功能类-关闭[开通免密支付]弹窗',
+      name: '持续-应用提示弹窗-关闭[开通免密支付]弹窗',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -69,7 +72,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '权限提示-设备信息权限',
+      name: '持续-应用提示弹窗-设备信息权限',
+      enable: false,
       desc: '点击[不允许]',
       fastQuery: true,
       resetMatch: 'app',

@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-首页占位广告',
+      name: '持续-页面内广告-首页占位广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,

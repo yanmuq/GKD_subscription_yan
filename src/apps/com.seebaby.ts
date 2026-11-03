@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '更新提示',
-      matchTime: 10000,
+      name: '限时-应用提示-更新提示',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -20,7 +21,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '分段广告-信息流、文章底部广告',
+      name: '持续-页面内广告-信息流、文章底部广告',
+      enable: false,
       activityIds: [
         'com.seebaby.login.ui.activity.LauncherActivity',
         'com.seebaby.parent.article.ui.activity.NativeArticleDetailActivity',
@@ -51,7 +53,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告',
+      name: '持续-全屏广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {

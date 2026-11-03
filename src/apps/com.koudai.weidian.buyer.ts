@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 6,
-      name: '全屏广告-首页红包弹窗',
-      matchTime: 10000,
+      name: '限时-全屏广告-首页红包弹窗',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

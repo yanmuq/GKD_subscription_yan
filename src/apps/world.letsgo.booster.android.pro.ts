@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '通知提示-各种提示弹窗',
+      name: '持续-应用提示弹窗-各种提示弹窗',
+      enable: false,
       rules: [
         {
           fastQuery: true,

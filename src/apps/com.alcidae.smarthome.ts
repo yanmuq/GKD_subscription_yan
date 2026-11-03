@@ -5,10 +5,11 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-首页通知弹窗',
+      name: '限时-全屏广告-首页通知弹窗',
+      enable: false,
       desc: '点击[不再提醒]并关闭弹窗',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.danale.video.mainpage.main.MainActivity',
@@ -29,10 +30,11 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '权限提示-通知权限',
+      name: '限时-应用提示-通知权限',
+      enable: false,
       desc: '点击[取消]',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

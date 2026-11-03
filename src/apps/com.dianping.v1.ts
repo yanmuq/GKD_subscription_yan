@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-主页推荐关注弹窗',
-      matchTime: 10000,
+      name: '限时-全屏广告-主页推荐关注弹窗',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -21,8 +22,9 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '权限提示-通知权限',
-      matchTime: 10000,
+      name: '限时-应用提示-通知权限',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -36,7 +38,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '局部广告-关闭[签到开红包]',
+      name: '持续-页面内广告-关闭[签到开红包]',
+      enable: false,
       desc: '点击右下角悬浮图片右上角的x图标',
       activityIds: ['com.dianping.v1.NovaMainActivity'],
       rules:
@@ -45,7 +48,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -58,7 +62,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '分段广告-推荐页卡片广告',
+      name: '持续-页面内广告-推荐页卡片广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -95,7 +100,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '功能类-选择地图时自动点击[更多]',
+      name: '持续-功能操作-选择地图时自动点击[更多]',
+      enable: false,
       rules: [
         {
           fastQuery: true,

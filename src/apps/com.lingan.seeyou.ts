@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-评论区上方卡片广告',
+      name: '持续-页面内广告-评论区上方卡片广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {

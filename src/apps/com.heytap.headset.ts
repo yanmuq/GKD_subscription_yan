@@ -6,9 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '更新提示',
+      name: '持续-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -27,10 +27,10 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '更新提示-耳机固件更新弹窗',
+      name: '持续-更新提示-耳机固件更新弹窗',
+      enable: false,
       desc: '点击取消',
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

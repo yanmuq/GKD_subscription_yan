@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 3,
-      name: '其他-关闭订阅社区消息提示',
+      name: '持续-应用提示弹窗-关闭订阅社区消息提示',
+      enable: false,
       desc: '自动点击[Not Now]',
       fastQuery: true,
       rules: [
@@ -24,7 +25,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '其他-NSFW 内容提示',
+      name: '持续-应用提示弹窗-NSFW 内容提示',
+      enable: false,
       desc: '自动点击 continue',
       fastQuery: true,
       rules: [
@@ -37,7 +39,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '功能类-自动点击翻译',
+      name: '持续-功能操作-自动点击翻译',
+      enable: false,
       rules: [
         {
           fastQuery: true,

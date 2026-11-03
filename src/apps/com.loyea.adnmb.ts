@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 5,
-      name: '通知提示-通知弹窗',
+      name: '限时-应用提示-通知弹窗',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: '.activity.MainActivity',

@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
+      name: '限时-开屏广告',
+      enable: true,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 2,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -37,9 +38,10 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -53,8 +55,9 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-首页弹窗广告',
-      matchTime: 10000,
+      name: '限时-全屏广告-首页弹窗广告',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -68,10 +71,11 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '权限提示-通知权限',
+      name: '限时-应用提示-通知权限',
+      enable: false,
       desc: '请求推送通知弹窗，点击取消',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -91,7 +95,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '权限提示-请求获取剪贴板权限弹窗',
+      name: '持续-应用提示弹窗-请求获取剪贴板权限弹窗',
+      enable: false,
       desc: '请求获取剪贴板权限弹窗，点击不允许',
       actionMaximum: 1,
       resetMatch: 'app',
@@ -113,7 +118,8 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '局部广告-右侧悬浮小图标',
+      name: '持续-页面内广告-右侧悬浮小图标',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -144,9 +150,10 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '评价提示-请求好评弹窗',
+      name: '限时-应用提示-请求好评弹窗',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -160,10 +167,10 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '权限提示-通讯录权限申请弹窗',
+      name: '持续-应用提示弹窗-通讯录权限申请弹窗',
+      enable: false,
       desc: '点击取消',
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -177,7 +184,8 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      name: '权限提示-定位权限',
+      name: '持续-应用提示弹窗-定位权限',
+      enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

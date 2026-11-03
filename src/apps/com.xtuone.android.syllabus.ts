@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-首页卡片广告',
+      name: '持续-页面内广告-首页卡片广告',
+      enable: false,
       rules: [
         {
           activityIds: 'com.xtuone.android.friday.MainFragmentActivity',
@@ -18,7 +19,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-课程表界面广告',
+      name: '持续-页面内广告-课程表界面广告',
+      enable: false,
       rules: [
         {
           activityIds: 'com.xtuone.android.friday.MainFragmentActivity',
@@ -29,9 +31,10 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-弹窗广告',
+      name: '限时-全屏广告-弹窗广告',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -44,7 +47,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '更新提示',
+      name: '持续-更新提示',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',

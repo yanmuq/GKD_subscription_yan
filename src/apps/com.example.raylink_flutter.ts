@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '更新提示',
-      matchTime: 10000,
+      name: '限时-应用提示-更新提示',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -20,7 +21,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-退出软件时点击"退出程序"',
+      name: '持续-功能操作-退出软件时点击"退出程序"',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -41,7 +43,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '通知提示-首页反诈骗提示',
+      name: '持续-应用提示弹窗-首页反诈骗提示',
+      enable: false,
       rules: [
         {
           activityIds: 'com.remote.cn.MainActivity',

@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 5,
-      name: '评价提示-评论区满意度评价',
+      name: '持续-应用提示弹窗-评论区满意度评价',
+      enable: false,
       rules: [
         {
           key: 1,
@@ -24,7 +25,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '评价提示-APP评分',
+      name: '持续-应用提示弹窗-APP评分',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -38,7 +40,8 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '通知提示-订阅感兴趣的通知',
+      name: '持续-应用提示弹窗-订阅感兴趣的通知',
+      enable: false,
       desc: '点击"暂不开启"',
       fastQuery: true,
       actionMaximum: 1,
@@ -55,7 +58,8 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -79,7 +83,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '功能类-自动领取会员经验',
+      name: '持续-功能操作-自动领取会员经验',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -95,7 +100,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '功能类-自动关闭故事模式',
+      name: '持续-功能操作-自动关闭故事模式',
+      enable: false,
       desc: '播放视频时退出竖屏模式',
       matchTime: 10000,
       actionMaximum: 1,

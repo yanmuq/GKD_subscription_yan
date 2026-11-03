@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-关闭底部播放横条',
+      name: '持续-功能操作-关闭底部播放横条',
+      enable: false,
       rules: [
         {
           activityIds: '.MainActivity',

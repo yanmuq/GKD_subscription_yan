@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-文件可能有害-点击[仍然下载]',
+      name: '持续-功能操作-文件可能有害-点击[仍然下载]',
+      enable: false,
       desc: '警告⚠️：会跳过有害文件警告，请谨慎开启',
       rules: [
         {

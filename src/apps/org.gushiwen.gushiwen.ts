@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '分段广告-弹窗广告',
+      name: '持续-页面内广告-弹窗广告',
+      enable: false,
       rules: [
         {
           key: 1,

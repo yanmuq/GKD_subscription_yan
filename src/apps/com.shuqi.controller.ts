@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '局部广告',
+      name: '持续-页面内广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -26,12 +27,15 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '全屏广告',
+      name: '限时-全屏广告',
+      resetMatch: 'app',
+      matchTime: 20000,
+      enable: false,
       rules: [
         {
           key: 0,
           fastQuery: true,
-          matchTime: 10000,
+          matchTime: 20000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: 'com.shuqi.home.MainActivity',

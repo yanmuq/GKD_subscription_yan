@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '局部广告-漫画阅读页面-左侧悬浮广告',
+      name: '持续-页面内广告-漫画阅读页面-左侧悬浮广告',
+      enable: false,
       rules: [
         {
           activityIds: 'com.qq.ac.android.reader.comic.ComicReaderActivity',
@@ -18,7 +19,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '局部广告-信息流广告',
+      name: '持续-页面内广告-信息流广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {

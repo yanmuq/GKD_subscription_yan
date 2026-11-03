@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -37,7 +38,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       matchRoot: true,
       rules: [
         {
@@ -105,8 +107,9 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-VIP弹窗',
-      matchTime: 10000,
+      name: '限时-全屏广告-VIP弹窗',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -141,7 +144,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-[看广告免费听歌]弹窗',
+      name: '持续-全屏广告-[看广告免费听歌]弹窗',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -155,10 +159,11 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-[开启音乐DJ]弹窗',
+      name: '限时-应用提示-[开启音乐DJ]弹窗',
+      enable: false,
       desc: '勾选[今日不再提醒]-点击[关闭]',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -181,11 +186,11 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '局部广告-悬浮广告',
+      name: '持续-页面内广告-悬浮广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
-          matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: 'com.kugou.android.app.MediaActivity',
@@ -201,9 +206,10 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '全屏广告-签到弹窗',
+      name: '限时-全屏广告-签到弹窗',
+      enable: false,
       desc: '点击关闭',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -222,8 +228,8 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '功能类-自动关闭速听模式',
-      matchTime: 10000,
+      name: '持续-功能操作-自动关闭速听模式',
+      enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: '.app.MediaActivity',

@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-app无响应-关闭',
+      name: '持续-功能操作-app无响应-关闭',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {

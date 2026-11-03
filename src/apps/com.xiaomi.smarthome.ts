@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       rules: [
         {
           activityIds: 'com.xiaomi.smarthome.SmartHomeMainActivity',
@@ -18,8 +19,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '更新提示-设备固件升级提示弹窗',
-      matchTime: 10000,
+      name: '持续-更新提示-设备固件升级提示弹窗',
+      enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

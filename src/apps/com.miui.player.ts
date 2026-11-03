@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -22,7 +23,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告-悬浮广告',
+      name: '持续-页面内广告-悬浮广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -46,7 +48,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-横幅广告',
+      name: '持续-页面内广告-横幅广告',
+      enable: false,
       desc: '关闭播放页面横幅广告',
       fastQuery: true,
       activityIds:
@@ -73,9 +76,10 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-弹窗广告',
+      name: '限时-全屏广告-弹窗广告',
+      enable: false,
       desc: '点击关闭',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -101,7 +105,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '全屏广告-弹窗广告（部分误触）',
+      name: '持续-全屏广告-弹窗广告（部分误触）',
+      enable: false,
       desc: '注意：会关闭年度报告邀请函弹窗',
       rules: [
         {
@@ -114,7 +119,8 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '功能类-看广告视频领VIP',
+      name: '持续-功能操作-看广告视频领VIP',
+      enable: false,
       desc: '等待15s自动点击"退出"',
       rules: [
         {
@@ -128,7 +134,8 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '局部广告-主界面卡片广告',
+      name: '持续-页面内广告-主界面卡片广告',
+      enable: false,
       rules: [
         {
           key: 1,
@@ -150,7 +157,8 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '分段广告-首页卡片广告',
+      name: '持续-页面内广告-首页卡片广告',
+      enable: false,
       rules: [
         {
           key: 0,

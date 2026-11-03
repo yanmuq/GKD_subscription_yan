@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '评价提示',
+      name: '限时-应用提示-评价提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -27,7 +28,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '权限提示-后台运行',
+      name: '持续-应用提示弹窗-后台运行',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -42,9 +44,9 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告',
+      name: '持续-全屏广告',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -67,9 +69,10 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -87,7 +90,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '通知提示-公告栏',
+      name: '持续-应用提示弹窗-公告栏',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -100,7 +104,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '权限提示-麦克风',
+      name: '持续-应用提示弹窗-麦克风',
+      enable: false,
       rules: [
         {
           fastQuery: true,

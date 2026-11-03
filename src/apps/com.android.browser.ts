@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '局部广告-关闭[个性推荐开启提示]',
+      name: '持续-应用提示弹窗-关闭[个性推荐开启提示]',
+      enable: false,
       activityIds: ['com.android.browser.BrowserActivity'],
       rules: [
         {
@@ -18,7 +19,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '分段广告-主页信息流广告',
+      name: '持续-页面内广告-主页信息流广告',
+      enable: false,
       fastQuery: true,
       activityIds: [
         'com.android.browser.BrowserActivity',
@@ -47,7 +49,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-搜索结果页底部必应推荐卡片',
+      name: '持续-页面内广告-搜索结果页底部必应推荐卡片',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -64,7 +67,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '分段广告-小说阅读页面广告',
+      name: '持续-页面内广告-小说阅读页面广告',
+      enable: false,
       fastQuery: true,
       activityIds: 'com.duokan.shop.mibrowser.reading.SdkReaderActivity',
       rules: [

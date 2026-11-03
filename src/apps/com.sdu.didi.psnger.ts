@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-打车页面右上角红包广告',
+      name: '持续-页面内广告-打车页面右上角红包广告',
+      enable: false,
       desc: '点击卡片广告左上角x',
       rules: [
         {
@@ -20,8 +21,9 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '更新提示',
-      matchTime: 10000,
+      name: '限时-应用提示-更新提示',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -37,12 +39,15 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-弹窗广告',
+      name: '限时-全屏广告-弹窗广告',
+      resetMatch: 'app',
+      matchTime: 20000,
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
           fastQuery: true,
-          matchTime: 10000,
+          matchTime: 20000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: 'com.didi.sdk.app.MainActivity',
@@ -54,7 +59,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-[升级一键付款]弹窗',
+      name: '持续-应用提示弹窗-[升级一键付款]弹窗',
+      enable: false,
       desc: '点击[跳过]',
       rules: [
         {
@@ -71,7 +77,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '其他-追加车型提示',
+      name: '持续-应用提示弹窗-追加车型提示',
+      enable: false,
       rules: [
         {
           fastQuery: true,

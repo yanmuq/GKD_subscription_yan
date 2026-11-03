@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '更新提示',
+      name: '持续-更新提示',
+      enable: false,
       fastQuery: true,
       resetMatch: 'app',
       rules: [

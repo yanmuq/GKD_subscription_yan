@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '分段广告-支付完成界面卡片广告',
+      name: '持续-页面内广告-支付完成界面卡片广告',
+      enable: false,
       actionDelay: 500,
       fastQuery: true,
       activityIds: 'com.unionpay.activity.react.UPActivityReactNative',
@@ -28,7 +29,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '局部广告-右侧悬浮广告',
+      name: '持续-页面内广告-右侧悬浮广告',
+      enable: false,
       actionDelay: 500,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -51,10 +53,11 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '权限提示-定位权限',
+      name: '限时-应用提示-定位权限',
+      enable: false,
       actionDelay: 500,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -79,11 +82,12 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '权限提示-通知权限',
+      name: '限时-应用提示-通知权限',
+      enable: false,
       actionDelay: 500,
       desc: '点击关闭',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -98,7 +102,8 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '全屏广告-天天签到-获得新勋章提示',
+      name: '持续-应用提示弹窗-天天签到-获得新勋章提示',
+      enable: false,
       actionDelay: 500,
       desc: '点击左上角返回',
       actionMaximum: 1,
@@ -115,7 +120,8 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      name: '全屏广告-领取优惠弹窗',
+      name: '持续-全屏广告-领取优惠弹窗',
+      enable: false,
       actionDelay: 500,
       desc: '点击关闭',
       rules: [

@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-自动点击[查看翻译]',
+      name: '持续-功能操作-自动点击[查看翻译]',
+      enable: false,
       activityIds: [
         '.immersiveactivity.ImmersiveActivity',
         '.activity.FbMainTabActivity',

@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 4,
-      name: '权限提示-定位权限',
+      name: '限时-应用提示-定位权限',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -23,7 +24,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '局部广告',
+      name: '持续-页面内广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,

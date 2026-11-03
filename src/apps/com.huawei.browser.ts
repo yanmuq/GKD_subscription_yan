@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
+      name: '限时-开屏广告',
+      enable: true,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
@@ -23,7 +24,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       desc: '关闭资讯通知后，总是弹窗让打开',
       rules: [
         {
@@ -37,7 +39,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {

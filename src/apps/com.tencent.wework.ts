@@ -7,7 +7,8 @@ export default defineGkdApp({
     {
       // 节点id疑似随机生成,尽量不用id属性
       key: 1,
-      name: '功能类-自动领红包',
+      name: '持续-功能操作-自动领红包',
+      enable: false,
       desc: '自己发的红包不领',
       rules: [
         {
@@ -55,7 +56,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '分段广告-顶部卡片广告',
+      name: '持续-页面内广告-顶部卡片广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -81,7 +83,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '权限提示-悬浮窗',
+      name: '持续-应用提示弹窗-悬浮窗',
+      enable: false,
       rules: [
         {
           fastQuery: true,

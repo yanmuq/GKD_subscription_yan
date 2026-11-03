@@ -6,10 +6,11 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '更新提示-版本更新弹窗',
+      name: '限时-应用提示-更新提示-版本更新弹窗',
+      enable: false,
       desc: '点击暂不更新',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

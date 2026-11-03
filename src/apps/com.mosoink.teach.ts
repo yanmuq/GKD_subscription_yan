@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '全屏广告-首页班课列表广告',
+      name: '限时-全屏广告-首页班课列表广告',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.mosoink.teach.MainMenuActivity',

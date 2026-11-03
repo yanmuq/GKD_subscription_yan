@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-权限授予弹窗',
+      name: '系统权限-权限授予弹窗',
+      enable: false,
       desc: '自动点击"仅在使用中允许"',
       fastQuery: true,
       matchTime: 10000,
@@ -23,7 +24,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '权限提示-通知权限',
+      name: '系统权限-通知权限',
+      enable: false,
       desc: '点击拒绝',
       matchTime: 10000,
       actionMaximum: 1,

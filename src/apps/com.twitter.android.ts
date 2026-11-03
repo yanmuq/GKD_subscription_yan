@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '分段广告-主页信息流广告',
+      name: '持续-页面内广告-主页信息流广告',
+      enable: false,
       desc: '点击右上角关闭,点击我不喜欢',
       actionCd: 3000, // https://github.com/gkd-kit/subscription/issues/832
       fastQuery: true,
@@ -59,7 +60,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '分段广告-帖子详情页、搜索页信息流广告',
+      name: '持续-页面内广告-帖子详情页、搜索页信息流广告',
+      enable: false,
       desc: '点击右上角关闭,点击屏蔽用户,确认屏蔽.点击[我不喜欢]会返回主页,因此点击[屏蔽]',
       fastQuery: true,
       activityIds: [
@@ -125,7 +127,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '分段广告-用户资料页信息流广告',
+      name: '持续-页面内广告-用户资料页信息流广告',
+      enable: false,
       desc: '点击右上角关闭,点击我不喜欢',
       fastQuery: true,
       activityIds: 'com.twitter.app.profiles.ProfileActivity',
@@ -163,9 +166,10 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '评价提示',
+      name: '限时-应用提示-评价提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -178,10 +182,11 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '权限提示-通知权限',
+      name: '限时-应用提示-通知权限',
+      enable: false,
       desc: '点击"Not now"',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -195,7 +200,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '功能类-自动点击翻译',
+      name: '持续-功能操作-自动点击翻译',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -212,7 +218,8 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '功能类-自动点击"显示更多帖子"',
+      name: '持续-功能操作-自动点击"显示更多帖子"',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -226,7 +233,8 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '其他-关闭[开启个性化广告]弹窗',
+      name: '持续-应用提示弹窗-关闭[开启个性化广告]弹窗',
+      enable: false,
       rules: [
         {
           fastQuery: true,

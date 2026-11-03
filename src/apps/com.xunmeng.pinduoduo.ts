@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '更新提示',
-      matchTime: 10000,
+      name: '限时-应用提示-更新提示',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -28,7 +29,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       rules: [
         {
           key: 3,
@@ -101,7 +103,6 @@ export default defineGkdApp({
         },
         {
           key: 8,
-          matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: '.ui.activity.HomeActivity',
@@ -112,7 +113,6 @@ export default defineGkdApp({
         },
         {
           key: 9,
-          matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: '.ui.activity.HomeActivity',
@@ -131,7 +131,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '局部广告-悬浮广告',
+      name: '持续-页面内广告-悬浮广告',
+      enable: false,
       desc: '点击关闭',
       activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
       rules: [
@@ -167,7 +168,8 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '局部广告-商品详情页视频讲解窗口',
+      name: '持续-页面内广告-商品详情页视频讲解窗口',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -181,7 +183,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '功能类-多多视频每日自动签到',
+      name: '持续-功能操作-多多视频每日自动签到',
+      enable: false,
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -209,7 +212,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '全屏广告-多多视频划到广告自动跳过',
+      name: '持续-全屏广告-多多视频划到广告自动跳过',
+      enable: false,
       desc: '点击返回自动刷新，从而跳过广告',
       fastQuery: true,
       activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
@@ -234,7 +238,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '功能类-发送图片时自动勾选原图',
+      name: '持续-功能操作-发送图片时自动勾选原图',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -250,7 +255,8 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '全屏广告-下单后出现的弹窗',
+      name: '持续-全屏广告-下单后出现的弹窗',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -273,7 +279,8 @@ export default defineGkdApp({
     },
     {
       key: 16,
-      name: '青少年模式',
+      name: '持续-应用提示弹窗-青少年模式',
+      enable: false,
       desc: '点击[我知道了]',
       fastQuery: true,
       actionMaximum: 1,
@@ -289,7 +296,8 @@ export default defineGkdApp({
     },
     {
       key: 17,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -326,7 +334,8 @@ export default defineGkdApp({
     },
     {
       key: 19,
-      name: '全屏广告-[个性化推荐]弹窗',
+      name: '持续-应用提示弹窗-[个性化推荐]弹窗',
+      enable: false,
       desc: '点击[取消]',
       fastQuery: true,
       actionMaximum: 1,
@@ -342,7 +351,8 @@ export default defineGkdApp({
     },
     {
       key: 20,
-      name: '其他-登录提现页面点击[跳过]',
+      name: '持续-功能操作-登录提现页面点击[跳过]',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -355,7 +365,8 @@ export default defineGkdApp({
     },
     {
       key: 21,
-      name: '功能类-关闭截图后的弹窗',
+      name: '持续-应用提示弹窗-关闭截图后的弹窗',
+      enable: false,
       rules: [
         {
           fastQuery: true,

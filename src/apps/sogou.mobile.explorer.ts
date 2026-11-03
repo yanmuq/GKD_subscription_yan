@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '分段广告-小说页面广告',
+      name: '持续-页面内广告-小说页面广告',
+      enable: false,
       activityIds: 'com.tencent.mtt.MainActivity',
       rules: [
         {

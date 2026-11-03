@@ -6,11 +6,11 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '更新提示-固件更新弹窗',
+      name: '持续-更新提示-固件更新弹窗',
+      enable: false,
       desc: '点击[以后再说]',
       matchRoot: true, // https://github.com/AIsouler/GKD_subscription/issues/1051
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -27,9 +27,10 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-弹窗广告',
+      name: '限时-全屏广告-弹窗广告',
+      enable: false,
       desc: '点击关闭',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

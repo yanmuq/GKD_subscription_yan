@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -34,7 +35,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告-购物车页面砸金蛋',
+      name: '持续-页面内广告-购物车页面砸金蛋',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -47,7 +49,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-悬浮广告',
+      name: '持续-页面内广告-悬浮广告',
+      enable: false,
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
       rules: [
         {
@@ -81,7 +84,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
       actionMaximum: 1,
@@ -112,7 +116,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -166,7 +171,6 @@ export default defineGkdApp({
         {
           key: 3,
           fastQuery: true,
-          matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
           action: 'back',
@@ -179,7 +183,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '局部广告-横幅广告',
+      name: '持续-页面内广告-横幅广告',
+      enable: false,
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
       rules: [
         {
@@ -214,7 +219,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '功能类-京东账号登录授权',
+      name: '持续-功能操作-京东账号登录授权',
+      enable: false,
       desc: '自动点击"确认登录"',
       activityIds: 'com.jingdong.app.mall.WebActivity',
       rules: '[text="京东登录"] > [desc="确认登录"]',
@@ -222,7 +228,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '局部广告-支付页面产品推荐',
+      name: '持续-页面内广告-支付页面产品推荐',
+      enable: false,
       desc: '自动点击右上角"x"',
       activityIds:
         'com.jd.lib.settlement.fillorder.activity.NewFillOrderActivity',
@@ -231,7 +238,8 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '全屏广告-购物车页面支付成功弹窗广告',
+      name: '持续-全屏广告-购物车页面支付成功弹窗广告',
+      enable: false,
       desc: '自动点击正下方的"x"',
       fastQuery: true,
       rules: [
@@ -244,7 +252,8 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '全屏广告-加入购物车后出现的弹窗',
+      name: '持续-全屏广告-加入购物车后出现的弹窗',
+      enable: false,
       desc: '点击[继续逛]',
       rules: [
         {
@@ -257,7 +266,8 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '功能类-支付订单后点击[完成]',
+      name: '持续-功能操作-支付订单后点击[完成]',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -271,7 +281,8 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      name: '功能类-支付订单后跳过开通[刷脸支付]',
+      name: '持续-应用提示弹窗-支付订单后跳过开通[刷脸支付]',
+      enable: false,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',
@@ -289,7 +300,8 @@ export default defineGkdApp({
     },
     {
       key: 16,
-      name: '功能类-展开全部订单信息',
+      name: '持续-功能操作-展开全部订单信息',
+      enable: false,
       desc: '订单已完成-点击全部订单信息',
       rules: [
         {

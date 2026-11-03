@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '分段广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '注意⚠️：该广告需开启[智能服务]的对应规则才能关闭',
       rules: [
         {

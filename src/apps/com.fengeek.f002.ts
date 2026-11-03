@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '功能类-自动连接耳机',
+      name: '持续-功能操作-自动连接耳机',
+      enable: false,
       desc: '点击连接耳机按钮,点击扫描到的第一个设备',
       activityIds: 'com.fengeek.f002.MainActivity',
       rules: [

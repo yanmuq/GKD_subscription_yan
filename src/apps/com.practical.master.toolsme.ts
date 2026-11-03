@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 6,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       rules: [
         {
           name: '字节穿山甲SDK',

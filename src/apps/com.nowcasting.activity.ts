@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-VIP弹窗广告',
-      matchTime: 10000,
+      name: '限时-全屏广告-VIP弹窗广告',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -21,7 +22,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       fastQuery: true,
       activityIds: 'com.nowcasting.activity.WeatherActivity',
       rules: [
@@ -50,7 +52,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '分段广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       fastQuery: true,
       activityIds: 'com.nowcasting.activity.WeatherActivity',
       rules: [
@@ -69,7 +72,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
       activityIds: 'com.nowcasting.activity.WeatherActivity',
@@ -89,7 +93,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '功能类-点击收起顶部工具栏',
+      name: '持续-功能操作-点击收起顶部工具栏',
+      enable: false,
       rules: [
         {
           fastQuery: true,

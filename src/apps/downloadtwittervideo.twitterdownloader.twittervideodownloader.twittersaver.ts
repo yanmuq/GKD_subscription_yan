@@ -6,10 +6,11 @@ export default defineGkdApp({
   groups: [
     {
       key: 3,
-      name: '评价提示-评分弹窗',
+      name: '限时-应用提示-评分弹窗',
+      enable: false,
       desc: '点击 LATER ',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

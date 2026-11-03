@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告',
+      name: '持续-页面内广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -29,7 +30,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告',
+      name: '持续-全屏广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -54,7 +56,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       desc: '点击:x取消',
       rules: [
         {
@@ -68,7 +71,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '权限提示-悬浮小窗播放权限',
+      name: '持续-应用提示弹窗-悬浮小窗播放权限',
+      enable: false,
       desc: '点击取消',
       rules: [
         {
@@ -82,7 +86,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '功能类-丁香园安全中心-自动点击继续访问',
+      name: '持续-功能操作-丁香园安全中心-自动点击继续访问',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -95,7 +100,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '功能类-自动点击查看答案',
+      name: '持续-功能操作-自动点击查看答案',
+      enable: false,
       rules: [
         {
           key: 1,
@@ -125,7 +131,8 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '功能类-药品说明书-表格全屏自动横屏观看',
+      name: '持续-功能操作-药品说明书-表格全屏自动横屏观看',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -138,7 +145,8 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '功能类-自动点击查看原图',
+      name: '持续-功能操作-自动点击查看原图',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -150,7 +158,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '功能类-📋病例视频自动慢速x0.5_选你想要的但不要多选!',
+      name: '持续-功能操作-📋病例视频自动慢速x0.5_选你想要的但不要多选!',
+      enable: false,
       desc: '适合CT,MRI影像学深入分析',
       actionMaximum: 1,
       activityIds: '.biz.post.PostDetailActivity',
@@ -174,7 +183,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '功能类-📋病例视频自动慢速x0.8_选你想要的但不要多选!',
+      name: '持续-功能操作-📋病例视频自动慢速x0.8_选你想要的但不要多选!',
+      enable: false,
       desc: '适合CT,MRI影像学深入分析',
       actionMaximum: 1,
       activityIds: '.biz.post.PostDetailActivity',
@@ -198,7 +208,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '功能类-📋病例视频自动倍速x1.5_选你想要的但不要多选!',
+      name: '持续-功能操作-📋病例视频自动倍速x1.5_选你想要的但不要多选!',
+      enable: false,
       desc: '提高观看效率',
       actionMaximum: 1,
       activityIds: '.biz.post.PostDetailActivity',
@@ -222,7 +233,8 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '功能类-📋病例视频自动倍速x2.0_选你想要的但不要多选!',
+      name: '持续-功能操作-📋病例视频自动倍速x2.0_选你想要的但不要多选!',
+      enable: false,
       desc: '极限观看效率',
       actionMaximum: 1,
       activityIds: '.biz.post.PostDetailActivity',
@@ -246,7 +258,8 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '功能类-📖课程视频自动倍速x1.2⚠️选你想要的但不要多选!',
+      name: '持续-功能操作-📖课程视频自动倍速x1.2⚠️选你想要的但不要多选!',
+      enable: false,
       desc: '我们导师再也不卡壳啦',
       rules: [
         {
@@ -260,7 +273,8 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '功能类-📖课程视频自动倍速x1.5⚠️选你想要的但不要多选',
+      name: '持续-功能操作-📖课程视频自动倍速x1.5⚠️选你想要的但不要多选',
+      enable: false,
       desc: '显著提高讲师效率',
       rules: [
         {
@@ -275,7 +289,8 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      name: '功能类-📖课程视频自动倍速x2.0⚠️选你想要的但不要多选',
+      name: '持续-功能操作-📖课程视频自动倍速x2.0⚠️选你想要的但不要多选',
+      enable: false,
       desc: '导师讲到冒烟不带停',
       rules: [
         {

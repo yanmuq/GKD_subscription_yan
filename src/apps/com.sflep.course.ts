@@ -6,13 +6,13 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-离开考试页面弹窗',
+      name: '持续-功能操作-离开考试页面弹窗',
+      enable: false,
       desc: '点击确定',
       rules: [
         {
           fastQuery: true,
           activityIds: '.activity.ClassActivity',
-          matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
           matches:
@@ -23,7 +23,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '更新提示',
+      name: '持续-更新提示',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -37,7 +38,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '功能类-中断考试弹窗',
+      name: '持续-功能操作-中断考试弹窗',
+      enable: false,
       desc: '点击确定',
       rules: [
         {

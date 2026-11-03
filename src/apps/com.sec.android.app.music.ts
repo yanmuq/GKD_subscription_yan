@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-[优化电池使用量]弹窗',
+      name: '持续-应用提示弹窗-[优化电池使用量]弹窗',
+      enable: false,
       desc: '点击[取消]',
       rules: [
         {

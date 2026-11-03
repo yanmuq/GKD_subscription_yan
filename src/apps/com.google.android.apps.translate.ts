@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 4,
-      name: '功能类-关闭登录备份翻译记录弹窗',
+      name: '限时-应用提示-关闭登录备份翻译记录弹窗',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

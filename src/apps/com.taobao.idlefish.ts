@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '权限提示-通知权限',
-      matchTime: 10000,
+      name: '限时-应用提示-通知权限',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -22,9 +23,10 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '权限提示-手机信息权限',
+      name: '限时-应用提示-手机信息权限',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -38,9 +40,10 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -53,7 +56,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告',
+      name: '持续-全屏广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -139,7 +143,8 @@ export default defineGkdApp({
     // },
     {
       key: 6,
-      name: '功能类-自动点击[查看原图]',
+      name: '持续-功能操作-自动点击[查看原图]',
+      enable: false,
       rules: [
         {
           activityIds:
@@ -153,7 +158,8 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '功能类-关闭小额免密支付',
+      name: '持续-应用提示弹窗-关闭小额免密支付',
+      enable: false,
       rules: [
         {
           fastQuery: true,

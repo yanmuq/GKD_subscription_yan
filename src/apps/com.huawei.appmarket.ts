@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
+      name: '限时-开屏广告',
+      enable: true,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
@@ -21,9 +22,10 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -36,7 +38,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '功能类-应用更新页面-点击[查看更多]',
+      name: '持续-功能操作-应用更新页面-点击[查看更多]',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -53,7 +56,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-热门应用推荐弹窗',
+      name: '持续-全屏广告-热门应用推荐弹窗',
+      enable: false,
       desc: '点击[直接进入]',
       fastQuery: true,
       actionMaximum: 1,
@@ -74,7 +78,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -89,7 +94,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       desc: '点击[以后再说]',
       rules: [
         {
@@ -104,7 +110,8 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '功能类-自动安装应用',
+      name: '持续-功能操作-自动安装应用',
+      enable: false,
       fastQuery: true,
       activityIds:
         'com.huawei.appgallery.systeminstalldistservice.riskcheck.ui.activity.InstallDistActivity',

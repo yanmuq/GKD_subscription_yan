@@ -8,7 +8,8 @@ export default defineGkdApp({
       // 由于该软件包安装程序存在更新、安装重叠的情况，且安装/更新后和重叠时activityid都不同，
       // 尚不明确安装、更新、重叠三种情况混合时的activityid，故去掉activityIds字段
       key: 1,
-      name: '功能类-自动安装/更新软件',
+      name: '持续-功能操作-自动安装/更新软件',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -56,7 +57,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-安全警告弹窗',
+      name: '系统权限-安全警告弹窗',
+      enable: false,
       desc: '点击[设置]',
       rules: [
         {

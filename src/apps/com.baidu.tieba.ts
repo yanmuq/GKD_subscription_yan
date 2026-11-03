@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -43,7 +44,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       actionMaximum: 1,
       rules: [
         {
@@ -72,7 +74,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '分段广告-信息流广告',
+      name: '持续-页面内广告-信息流广告',
+      enable: false,
       desc: '关闭广告、直播推广',
       fastQuery: true,
       rules: [
@@ -166,7 +169,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '局部广告-首页、推荐列表顶部卡片广告',
+      name: '持续-页面内广告-首页、推荐列表顶部卡片广告',
+      enable: false,
       matchTime: 10000,
       actionMaximum: 1,
       activityIds: ['.tblauncher.MainTabActivity', '.frs.FrsActivity'],
@@ -181,9 +185,10 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
@@ -197,7 +202,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       matchTime: 10000,
       actionMaximum: 1,
       rules: [
@@ -235,7 +241,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '局部广告-悬浮小广告',
+      name: '持续-页面内广告-悬浮小广告',
+      enable: false,
       matchDelay: 500,
       matchTime: 10000,
       actionMaximum: 1,
@@ -291,7 +298,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '局部广告-[帖子内/吧内]底部悬浮窗',
+      name: '持续-页面内广告-[帖子内/吧内]底部悬浮窗',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       rules: [
@@ -319,7 +327,8 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '功能类-贴吧内签到并关闭弹窗',
+      name: '持续-功能操作-贴吧内签到并关闭弹窗',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       rules: [
@@ -352,7 +361,8 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '局部广告-帖子底部话题卡片',
+      name: '持续-页面内广告-帖子底部话题卡片',
+      enable: false,
       desc: '点击关闭',
       actionMaximum: 1,
       rules: [
@@ -368,7 +378,8 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '全屏广告-会员弹窗',
+      name: '持续-全屏广告-会员弹窗',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -392,7 +403,8 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      name: '局部广告-信息流广告',
+      name: '持续-页面内广告-信息流广告',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
       forcedTime: 10000,
@@ -439,7 +451,8 @@ export default defineGkdApp({
     },
     {
       key: 16,
-      name: '局部广告-感兴趣的吧推广',
+      name: '持续-页面内广告-感兴趣的吧推广',
+      enable: false,
       desc: '关闭首页、吧内其他贴吧的推广',
       rules: [
         {

@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
+      name: '限时-开屏广告',
+      enable: true,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -30,7 +31,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       activityIds: 'com.babytree.apps.pregnancy.activity.SailfishActivity',
       rules: [
         {
@@ -42,7 +44,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '局部广告-首页右侧悬浮广告',
+      name: '持续-页面内广告-首页右侧悬浮广告',
+      enable: false,
       activityIds: 'com.babytree.apps.pregnancy.activity.SailfishActivity',
       rules: [
         {

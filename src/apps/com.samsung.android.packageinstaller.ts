@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '功能类-跳过安全使用协议',
+      name: '持续-功能操作-跳过安全使用协议',
+      enable: false,
       desc: '自动点击略过并关闭反恶意软件协议',
       fastQuery: true,
       rules: [

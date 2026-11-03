@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-流量继续播放视频',
+      name: '持续-功能操作-流量继续播放视频',
+      enable: false,
       desc: '点击[播放]',
       rules: [
         {

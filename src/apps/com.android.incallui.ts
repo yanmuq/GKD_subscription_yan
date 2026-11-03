@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-接通话时自动点击录音',
+      name: '持续-功能操作-接通话时自动点击录音',
+      enable: false,
       actionMaximum: 1,
       rules: [
         {

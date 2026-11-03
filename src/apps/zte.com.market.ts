@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-流量模式点击[继续下载]',
+      name: '持续-功能操作-流量模式点击[继续下载]',
+      enable: false,
       rules: [
         {
           fastQuery: true,

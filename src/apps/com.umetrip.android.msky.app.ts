@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 10,
-      name: '其他-进入飞行模式-提示弹窗',
+      name: '持续-应用提示弹窗-进入飞行模式-提示弹窗',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -20,7 +21,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '局部广告-首页右侧悬浮广告',
+      name: '持续-页面内广告-首页右侧悬浮广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -34,11 +36,14 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '全屏广告',
+      name: '限时-全屏广告',
+      resetMatch: 'app',
+      matchTime: 20000,
+      enable: false,
       rules: [
         {
           fastQuery: true,
-          matchTime: 10000,
+          matchTime: 20000,
           actionMaximum: 1,
           resetMatch: 'app',
           matches:

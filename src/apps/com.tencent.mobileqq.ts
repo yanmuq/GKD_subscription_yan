@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
+      name: '限时-开屏广告',
+      enable: true,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
@@ -36,7 +37,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告',
+      name: '持续-页面内广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -93,7 +95,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '分段广告',
+      name: '持续-页面内广告',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -133,7 +136,8 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '功能类-登录授权',
+      name: '持续-功能操作-登录授权',
+      enable: false,
       desc: '自动点击登录',
       rules: [
         {
@@ -163,7 +167,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '功能类-自动勾选原图',
+      name: '持续-功能操作-自动勾选原图',
+      enable: false,
       desc: '发送图片时自动勾选原图，可手动取消勾选',
       actionMaximum: 1,
       rules: [
@@ -186,7 +191,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '功能类-自动点击查看原图',
+      name: '持续-功能操作-自动点击查看原图',
+      enable: false,
       desc: '查看图片时自动点击原图',
       rules: [
         {
@@ -205,7 +211,8 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '开屏广告-QQ小程序开屏广告',
+      name: '持续-小程序开屏广告-QQ小程序',
+      enable: true,
       desc: '点击右下角跳过',
       fastQuery: true,
       actionMaximum: 1,
@@ -230,9 +237,10 @@ export default defineGkdApp({
     },
     {
       key: 17,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -263,9 +271,10 @@ export default defineGkdApp({
     },
     {
       key: 18,
-      name: '更新提示-消息页面-顶部',
+      name: '限时-应用提示-更新提示-消息页面-顶部',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -288,7 +297,8 @@ export default defineGkdApp({
     },
     {
       key: 24,
-      name: '局部广告-聊天页面广告',
+      name: '持续-页面内广告-聊天页面广告',
+      enable: false,
       rules: [
         {
           key: 1,
@@ -313,7 +323,8 @@ export default defineGkdApp({
     },
     {
       key: 27,
-      name: '功能类-自动领取群聊红包',
+      name: '持续-功能操作-自动领取群聊红包',
+      enable: false,
       desc: '自己发的红包、专属红包、口令红包、私聊红包不领',
       rules: [
         {
@@ -371,7 +382,8 @@ export default defineGkdApp({
     },
     {
       key: 29,
-      name: '功能类-申请入群后自动点击右上角关闭',
+      name: '持续-功能操作-申请入群后自动点击右上角关闭',
+      enable: false,
       actionMaximum: 1,
       rules: [
         {
@@ -387,7 +399,8 @@ export default defineGkdApp({
     },
     {
       key: 31,
-      name: '功能类-授权登录时关闭获取QQ好友关系',
+      name: '持续-功能操作-授权登录时关闭获取QQ好友关系',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -402,7 +415,8 @@ export default defineGkdApp({
     },
     {
       key: 32,
-      name: '其他-联系人页面-顶部可能认识的人推荐',
+      name: '持续-应用提示弹窗-联系人页面-顶部可能认识的人推荐',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -417,7 +431,8 @@ export default defineGkdApp({
     },
     {
       key: 33,
-      name: '功能类-自动解锁 Windows QQ',
+      name: '持续-功能操作-自动解锁 Windows QQ',
+      enable: false,
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -432,7 +447,8 @@ export default defineGkdApp({
     },
     {
       key: 34,
-      name: '功能类-关闭体验模式提醒',
+      name: '持续-应用提示弹窗-关闭体验模式提醒',
+      enable: false,
       desc: '点击[我知道了]',
       rules: [
         {
@@ -448,7 +464,8 @@ export default defineGkdApp({
     },
     {
       key: 35,
-      name: '功能类-自动跳转第三方应用',
+      name: '持续-功能操作-自动跳转第三方应用',
+      enable: false,
       desc: '点击[允许]',
       rules: [
         {

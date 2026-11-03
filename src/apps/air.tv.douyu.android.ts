@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 3,
-      name: '局部广告-直播间广告',
+      name: '持续-页面内广告-直播间广告',
+      enable: false,
       activityIds: [
         'tv.douyu.view.activity.PlayerActivity',
         'com.douyu.module.player.p.rambobase.RamboPlayerActivity',

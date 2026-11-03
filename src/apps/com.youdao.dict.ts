@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '分段广告-单词页面卡片广告',
+      name: '持续-页面内广告-单词页面卡片广告',
+      enable: false,
       fastQuery: true,
       activityIds: ['.activity.MainActivity', '.activity.DictQueryActivity'],
       rules: [
@@ -33,7 +34,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -99,7 +101,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-VIP弹窗',
+      name: '持续-全屏广告-VIP弹窗',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -129,9 +132,9 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '评价提示',
+      name: '持续-应用提示弹窗-评价提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -150,9 +153,10 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -166,7 +170,8 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '功能类-点击显示释义',
+      name: '持续-功能操作-点击显示释义',
+      enable: false,
       activityIds:
         'com.youdao.dict_flutter_android_bridge.WordBookFlutterActivity',
       rules: [
@@ -181,7 +186,8 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
       rules: [
@@ -209,7 +215,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '功能类-关闭单词页面[去复习]提示',
+      name: '持续-应用提示弹窗-关闭单词页面[去复习]提示',
+      enable: false,
       desc: '通过点击提示框以外的其他地方关闭',
       rules: [
         {
@@ -234,7 +241,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '全屏广告-开学福利弹窗',
+      name: '持续-全屏广告-开学福利弹窗',
+      enable: false,
       desc: '点击[不要再提醒我]-点击关闭',
       fastQuery: true,
       actionMaximum: 1,

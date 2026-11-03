@@ -6,9 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 3,
-      name: '全屏广告-视频推荐弹窗',
+      name: '持续-全屏广告-视频推荐弹窗',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -21,7 +21,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-视频播放时的广告',
+      name: '持续-全屏广告-视频播放时的广告',
+      enable: false,
       desc: '点击[关闭广告]',
       rules: [
         {
@@ -46,7 +47,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -87,7 +89,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '分段广告-首页卡片广告',
+      name: '持续-页面内广告-首页卡片广告',
+      enable: false,
       fastQuery: true,
       activityIds: 'com.youku.v2.HomePageEntry',
       rules: [

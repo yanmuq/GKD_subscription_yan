@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -51,7 +52,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -74,7 +76,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-自动签到',
+      name: '持续-功能操作-自动签到',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -114,7 +117,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '分段广告',
+      name: '持续-页面内广告',
+      enable: false,
       desc: '点击关闭-点击不感兴趣',
       rules: [
         {
@@ -181,7 +185,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       desc: '广告展示率低于20%时出现的广告',
       rules: [
         {
@@ -227,10 +232,11 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '通知提示-公告弹窗',
+      name: '限时-应用提示-公告弹窗',
+      enable: false,
       desc: '点击[收到]',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -245,7 +251,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '功能类-自动点击[使用浏览器打开]',
+      name: '持续-功能操作-自动点击[使用浏览器打开]',
+      enable: false,
       desc: '下载文件页面',
       rules: [
         {
@@ -261,8 +268,9 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '更新提示',
-      matchTime: 10000,
+      name: '限时-应用提示-更新提示',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

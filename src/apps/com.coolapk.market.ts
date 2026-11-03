@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: -1,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -53,7 +54,8 @@ export default defineGkdApp({
     },
     {
       key: 0,
-      name: '分段广告-信息流广告',
+      name: '持续-页面内广告-信息流广告',
+      enable: false,
       fastQuery: true,
       activityIds: [
         '.view.feed.FeedDetailActivityV8',
@@ -109,7 +111,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '更新提示',
+      name: '持续-更新提示',
+      enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -134,9 +137,10 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '权限提示-通知权限',
+      name: '限时-应用提示-通知权限',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -155,7 +159,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '局部广告-[大家还下载了]应用推荐',
+      name: '持续-页面内广告-[大家还下载了]应用推荐',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -175,7 +180,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '局部广告-信息流广告',
+      name: '持续-页面内广告-信息流广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {

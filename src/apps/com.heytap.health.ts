@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '更新提示',
+      name: '持续-更新提示',
+      enable: false,
       desc: '点击[以后再说]',
       actionMaximum: 1,
       resetMatch: 'app',
@@ -24,7 +25,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -37,7 +39,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '通知提示-健康周报',
+      name: '持续-应用提示弹窗-健康周报',
+      enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -51,7 +54,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告',
+      name: '持续-全屏广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -63,7 +67,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '其他-忽略[开启微信运动同步]',
+      name: '持续-应用提示弹窗-忽略[开启微信运动同步]',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -76,7 +81,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '权限提示-应用使用情况',
+      name: '持续-应用提示弹窗-应用使用情况',
+      enable: false,
       desc: '点击[暂不]',
       rules: [
         {

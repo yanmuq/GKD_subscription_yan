@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: -1,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -42,7 +43,8 @@ export default defineGkdApp({
     },
     {
       key: 0,
-      name: '全屏广告-瓜子会员弹窗',
+      name: '持续-全屏广告-瓜子会员弹窗',
+      enable: false,
       desc: '点击右上角[关闭]',
       rules: [
         {
@@ -62,9 +64,10 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '更新提示-版本更新',
+      name: '限时-应用提示-更新提示-版本更新',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -78,7 +81,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '分段广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       fastQuery: true,
       activityIds: '.application.Main',
       rules: [
@@ -109,7 +113,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '功能类-退出app提示',
+      name: '持续-功能操作-退出app提示',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -121,7 +126,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-远程控制结束后的广告',
+      name: '持续-全屏广告-远程控制结束后的广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {

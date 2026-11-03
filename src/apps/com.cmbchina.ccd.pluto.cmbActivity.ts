@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -28,9 +29,10 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-首页弹窗广告',
+      name: '限时-全屏广告-首页弹窗广告',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: ['com.cmbchina.ccd.pluto.cmbActivity.CMBRootActivityV2'],
@@ -43,9 +45,9 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '局部广告-右侧悬浮广告',
+      name: '持续-页面内广告-右侧悬浮广告',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 2, // 目前只有2个界面会分别弹悬浮窗
       resetMatch: 'app',
       rules: [
@@ -87,10 +89,11 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '权限提示-通知权限',
+      name: '限时-应用提示-通知权限',
+      enable: false,
       desc: '点击x按钮，不开启系统通知',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules:
@@ -99,7 +102,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '权限提示-定位权限',
+      name: '持续-应用提示弹窗-定位权限',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',

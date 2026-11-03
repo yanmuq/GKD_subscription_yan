@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '分段广告-首页文档列表广告',
+      name: '持续-页面内广告-首页文档列表广告',
+      enable: false,
       fastQuery: true,
       activityIds: [
         'cn.wps.moffice.main.StartPublicActivity',
@@ -35,7 +36,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告',
+      name: '持续-全屏广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -70,9 +72,10 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -85,7 +88,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '功能类-关闭[开启WPS云服务]弹窗',
+      name: '持续-应用提示弹窗-关闭[开启WPS云服务]弹窗',
+      enable: false,
       desc: '自动点击不开启',
       fastQuery: true,
       activityIds: [
@@ -113,7 +117,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '分段广告-文档末尾广告',
+      name: '持续-页面内广告-文档末尾广告',
+      enable: false,
       fastQuery: true,
       activityIds: 'cn.wps.moffice.writer.multiactivity.Writer',
       rules: [
@@ -133,7 +138,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '局部广告',
+      name: '持续-页面内广告',
+      enable: false,
       rules: [
         {
           key: 1,
@@ -153,7 +159,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '功能类-自动签到',
+      name: '持续-功能操作-自动签到',
+      enable: false,
       fastQuery: true,
       activityIds: 'cn.wps.moffice.main.push.explore.PushTipsWebActivity',
       rules: [
@@ -176,7 +183,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '评价提示',
+      name: '持续-应用提示弹窗-评价提示',
+      enable: false,
       rules: [
         {
           fastQuery: true,

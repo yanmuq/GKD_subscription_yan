@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '评价提示',
+      name: '限时-应用提示-评价提示',
+      enable: false,
       desc: '点击"返回"',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,
@@ -23,8 +24,9 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-年卡广告',
-      matchTime: 10000,
+      name: '限时-全屏广告-年卡广告',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,

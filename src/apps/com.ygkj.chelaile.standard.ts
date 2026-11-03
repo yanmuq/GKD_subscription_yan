@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -69,7 +70,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '更新提示',
+      name: '持续-更新提示',
+      enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,
@@ -86,7 +88,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -132,7 +135,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '功能类-打开app自动点击收藏列表第一个车🚗(不要同时开启哦~)',
+      name: '持续-功能操作-打开app自动点击收藏列表第一个车🚗(不要同时开启哦~)',
+      enable: false,
       desc: '启动app-收藏列表第一个车线-进入车线详情',
       fastQuery: true,
       actionMaximum: 1,
@@ -148,7 +152,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '功能类-打开app自动点击第一个车🚗后打开地图🗺️(不要同时开启哦~)',
+      name: '持续-功能操作-打开app自动点击第一个车🚗后打开地图🗺️(不要同时开启哦~)',
+      enable: false,
       desc: '启动app-收藏列表第一个车线-进入车线详情-点击地图查看所有车次位置',
       fastQuery: true,
       actionMaximum: 1,

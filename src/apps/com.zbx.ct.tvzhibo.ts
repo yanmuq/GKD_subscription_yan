@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 3,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -29,7 +30,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '局部广告-浮窗广告',
+      name: '持续-页面内广告-浮窗广告',
+      enable: false,
       desc: '会出现在更多页面、播放页面',
       fastQuery: true,
       rules: [
@@ -48,7 +50,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '全屏广告-播放页面弹窗广告',
+      name: '持续-全屏广告-播放页面弹窗广告',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
       rules: [

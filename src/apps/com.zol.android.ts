@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '局部广告-首页悬浮广告',
+      name: '持续-页面内广告-首页悬浮广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {

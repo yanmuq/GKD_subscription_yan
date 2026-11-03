@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-自动同意远程协助请求',
+      name: '持续-功能操作-自动同意远程协助请求',
+      enable: false,
       desc: '发来远程协助请求，点击同意',
       rules: [
         {

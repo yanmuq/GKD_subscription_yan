@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-首页顶部广告',
+      name: '持续-页面内广告-首页顶部广告',
+      enable: false,
       activityIds: 'com.qinlin.edoor.MainActivity',
       rules: [
         {
@@ -20,12 +21,12 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       rules: [
         {
           key: 0,
           fastQuery: true,
-          matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: '.MainActivity',
@@ -93,7 +94,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '通知提示-开门成功提示',
+      name: '持续-应用提示弹窗-开门成功提示',
+      enable: false,
       desc: '点击[好的]',
       rules: [
         {

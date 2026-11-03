@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-自动查看高清图片',
+      name: '持续-功能操作-自动查看高清图片',
+      enable: false,
       desc: '点击图片左下角[HD]',
       rules: [
         {

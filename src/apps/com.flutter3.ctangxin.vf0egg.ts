@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-弹窗广告', // 目前已叠加了三层广告
+      name: '限时-全屏广告-弹窗广告',
+      enable: false, // 目前已叠加了三层广告
       //matchDelay: 6500, // 待无法跳过的5s开屏广告过后，能够主动执行匹配
-      matchTime: 10000,
+      matchTime: 20000,
       actionCd: 100,
       resetMatch: 'app',
       activityIds: 'com.example.flutter3_frame.MainActivity',
@@ -23,8 +24,9 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-公告弹窗',
-      matchTime: 10000,
+      name: '限时-应用提示-公告弹窗',
+      enable: false,
+      matchTime: 20000,
       resetMatch: 'app',
       activityIds: 'com.example.flutter3_frame.MainActivity',
       rules: [

@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
       rules: [
@@ -31,7 +32,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -46,7 +48,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '更新提示',
+      name: '持续-更新提示',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -63,10 +66,11 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '权限提示-通知权限',
+      name: '限时-应用提示-通知权限',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -79,7 +83,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '评价提示',
+      name: '持续-应用提示弹窗-评价提示',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -93,7 +98,8 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '局部广告-悬浮广告',
+      name: '持续-页面内广告-悬浮广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -108,7 +114,8 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '分段广告-暂不开启自动备份',
+      name: '持续-应用提示弹窗-暂不开启自动备份',
+      enable: false,
       fastQuery: true,
       activityIds: '.ui.NewQuickSettingsActivity',
       rules: [

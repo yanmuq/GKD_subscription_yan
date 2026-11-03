@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '分段广告-信息流广告',
+      name: '持续-页面内广告-信息流广告',
+      enable: false,
       desc: '点击卡片右上角广告文字,出现广告反馈,点击屏蔽该广告',
       fastQuery: true,
       activityIds: [

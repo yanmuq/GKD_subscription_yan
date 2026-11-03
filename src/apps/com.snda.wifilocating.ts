@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -46,7 +47,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-连接WiFi后弹出的广告',
+      name: '持续-全屏广告-连接WiFi后弹出的广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -60,7 +62,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '功能类-加速成功后自动点击返回',
+      name: '持续-功能操作-加速成功后自动点击返回',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -74,7 +77,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '局部广告-连接WiFi界面右侧悬浮广告',
+      name: '持续-页面内广告-连接WiFi界面右侧悬浮广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -87,7 +91,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '局部广告-“我的”界面广告卡片',
+      name: '持续-页面内广告-“我的”界面广告卡片',
+      enable: false,
       rules: [
         {
           key: 0,

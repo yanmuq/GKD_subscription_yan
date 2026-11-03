@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 3,
-      name: '权限提示-通知权限',
-      matchTime: 10000,
+      name: '限时-应用提示-通知权限',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,
@@ -21,7 +22,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '功能类-[关闭所有标签？]弹窗',
+      name: '持续-功能操作-[关闭所有标签？]弹窗',
+      enable: false,
       desc: '点击[确定]',
       rules: [
         {
@@ -36,7 +38,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '功能类-关闭标签页',
+      name: '持续-功能操作-关闭标签页',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -50,7 +53,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '功能类-[前往CSDN APP阅读全文]弹窗',
+      name: '持续-功能操作-[前往CSDN APP阅读全文]弹窗',
+      enable: false,
       desc: '点击[继续]',
       rules: [
         {

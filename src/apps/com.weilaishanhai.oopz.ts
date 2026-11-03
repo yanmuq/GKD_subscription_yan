@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '开屏广告',
+      name: '限时-开屏广告',
+      enable: true,
       desc: '该软件部分开屏广告存在虚假跳过按钮，若点击会误触广告，因此该规则无法适配所有情况',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 2,
       resetMatch: 'app',
       priorityTime: 10000,

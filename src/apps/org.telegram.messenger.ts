@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '权限提示-通知权限',
-      matchTime: 10000,
+      name: '限时-应用提示-通知权限',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -22,7 +23,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '其他-添加生日提示',
+      name: '持续-应用提示弹窗-添加生日提示',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -35,7 +37,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '局部广告-拍卖提示',
+      name: '持续-页面内广告-拍卖提示',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -48,7 +51,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '其他-首页公告栏',
+      name: '持续-应用提示弹窗-首页公告栏',
+      enable: false,
       desc: '此规则覆盖生日提示、拍卖提示以及部分广告',
       rules: [
         {

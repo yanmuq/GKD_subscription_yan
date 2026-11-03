@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '开屏广告',
+      name: '持续-全屏广告-开屏广告',
+      enable: true,
       // matchTime: 10000, // 可能出现多次 https://github.com/AIsouler/GKD_subscription/issues/1376
       // actionMaximum: 1,
       // resetMatch: 'app',
@@ -22,7 +23,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告',
+      name: '持续-全屏广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -35,10 +37,11 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '通知提示-公告弹窗',
+      name: '限时-应用提示-公告弹窗',
+      enable: false,
       desc: '点击[查看详情]-返回关闭',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: '.activity.MainActivity',

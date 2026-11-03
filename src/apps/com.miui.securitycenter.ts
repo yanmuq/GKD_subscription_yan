@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 10,
-      name: '功能类-USB安装应用,自动点击[继续安装]',
+      name: '系统权限-USB安装应用,自动点击[继续安装]',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -18,7 +19,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '功能类-禁止获取定位',
+      name: '系统权限-禁止获取定位',
+      enable: false,
       desc: '关闭"允许联网及定位"后，每次打开手机管家都会出现',
       rules: [
         {
@@ -40,7 +42,8 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '功能类-使用返回退出时直接点击[退出]',
+      name: '持续-功能操作-使用返回退出时直接点击[退出]',
+      enable: false,
       desc: '退出时忽略[体检优化分数]/忽略[存储空间预警]',
       rules: [
         {
@@ -61,7 +64,8 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '功能类-电量已低于20%',
+      name: '持续-应用提示弹窗-电量已低于20%',
+      enable: false,
       desc: '点击[知道了]',
       rules: [
         {
@@ -73,7 +77,8 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '功能类-高敏感权限自动确定',
+      name: '系统权限-高敏感权限自动确定',
+      enable: false,
       desc: '勾选[我已知晓可能存在的风险]-10s后点击[确定]',
       fastQuery: true,
       activityIds: [
@@ -109,7 +114,8 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      name: '功能类-应用信息页-自启动提示',
+      name: '系统权限-应用信息页-自启动提示',
+      enable: false,
       desc: '点击[知道了]/[关闭]',
       fastQuery: true,
       activityIds: 'com.miui.appmanager.ApplicationsDetailsActivity',
@@ -129,7 +135,8 @@ export default defineGkdApp({
     },
     {
       key: 16,
-      name: '功能类-自动允许分享文件',
+      name: '系统权限-自动允许分享文件',
+      enable: false,
       desc: '允许应用通过分享获取手机文件',
       rules: [
         {
@@ -143,7 +150,8 @@ export default defineGkdApp({
     },
     {
       key: 17,
-      name: '功能类-自动关闭SIM卡安全保护验证提示',
+      name: '持续-应用提示弹窗-自动关闭SIM卡安全保护验证提示',
+      enable: false,
       desc: '点击[确定]',
       rules: [
         {
@@ -163,7 +171,8 @@ export default defineGkdApp({
     },
     {
       key: 18,
-      name: '功能类-禁止后台运行弹窗',
+      name: '系统权限-禁止后台运行弹窗',
+      enable: false,
       desc: '点击确定',
       rules: [
         {
@@ -180,7 +189,8 @@ export default defineGkdApp({
     },
     {
       key: 19,
-      name: '功能类-风险提示-仍然支付',
+      name: '持续-功能操作-风险提示-仍然支付',
+      enable: false,
       rules: [
         {
           fastQuery: true,

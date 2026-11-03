@@ -6,9 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '分段广告-首页推荐广告',
+      name: '持续-页面内广告-首页推荐广告',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

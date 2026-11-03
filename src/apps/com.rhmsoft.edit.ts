@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-自动点击完成',
+      name: '持续-功能操作-自动点击完成',
+      enable: false,
       desc: '保存成功后点击完成',
       rules: [
         {

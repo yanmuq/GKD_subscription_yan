@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -35,9 +36,10 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -56,7 +58,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-VIP弹窗',
+      name: '持续-全屏广告-VIP弹窗',
+      enable: false,
       desc: '直接关闭所有底部半屏弹窗',
       fastQuery: true,
       activityIds: [
@@ -100,7 +103,8 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '功能类-全自动看广告获取听歌时长',
+      name: '持续-功能操作-全自动看广告获取听歌时长',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -155,7 +159,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '功能类-关闭广告的声音',
+      name: '持续-功能操作-关闭广告的声音',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -168,7 +173,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '评价提示-评分弹窗',
+      name: '持续-应用提示弹窗-评分弹窗',
+      enable: false,
       desc: '使用返回关闭弹窗',
       actionMaximum: 1,
       resetMatch: 'app',
@@ -185,7 +191,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '局部广告-悬浮窗广告',
+      name: '持续-页面内广告-悬浮窗广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -201,7 +208,8 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '其他-关闭[更多直播]推荐',
+      name: '持续-应用提示弹窗-关闭[更多直播]推荐',
+      enable: false,
       desc: '直播间出现[更多直播]时点击右上角关闭',
       rules: [
         {

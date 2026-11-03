@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-自动点击截取全屏',
+      name: '持续-功能操作-自动点击截取全屏',
+      enable: false,
       rules: [
         {
           fastQuery: true,

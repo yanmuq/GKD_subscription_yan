@@ -6,14 +6,16 @@ export default defineGkdApp({
   groups: [
     {
       key: 10,
-      name: '局部广告-首页顶部广告',
+      name: '持续-页面内广告-首页顶部广告',
+      enable: false,
       activityIds: 'com.hihonor.magichome.business.MainActivity',
       rules: '[id="com.hihonor.magichome:id/item_close_image"]',
       snapshotUrls: 'https://i.gkd.li/i/12843930',
     },
     {
       key: 11,
-      name: '其他-推荐服务声明',
+      name: '持续-应用提示弹窗-推荐服务声明',
+      enable: false,
       desc: '推荐服务声明弹窗。默认点击"取消"按钮',
       activityIds: 'com.hihonor.magichome.business.MainActivity',
       rules:
@@ -22,10 +24,11 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       desc: '点击以后再说',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

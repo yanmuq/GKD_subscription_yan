@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '功能类-发现通讯录好友弹窗',
+      name: '持续-应用提示弹窗-发现通讯录好友弹窗',
+      enable: false,
       desc: '点击[暂时不要]',
       fastQuery: true,
       actionMaximum: 1,
@@ -23,9 +24,10 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '权限提示-定位权限',
+      name: '限时-应用提示-定位权限',
+      enable: false,
       desc: '点击[以后再说]',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

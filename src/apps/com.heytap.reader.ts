@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '全屏广告-首页弹窗广告',
+      name: '持续-全屏广告-首页弹窗广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -20,7 +21,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '局部广告-首页浮窗广告',
+      name: '持续-页面内广告-首页浮窗广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -34,11 +36,11 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '局部广告-今日推荐',
+      name: '持续-页面内广告-今日推荐',
+      enable: false,
       rules: [
         {
           fastQuery: true,
-          matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: 'com.zhangyue.iReader.bookshelf.ui.ActivityBookShelf',

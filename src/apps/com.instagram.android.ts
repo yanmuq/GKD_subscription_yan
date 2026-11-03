@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '分段广告-信息流广告',
+      name: '持续-页面内广告-信息流广告',
+      enable: false,
       desc: '但是步骤较多, 影响app使用',
       fastQuery: true,
       activityIds: 'com.instagram.mainactivity.InstagramMainActivity',
@@ -48,7 +49,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-自动点击[查看翻译]',
+      name: '持续-功能操作-自动点击[查看翻译]',
+      enable: false,
       fastQuery: true,
       activityIds: 'com.instagram.mainactivity.InstagramMainActivity',
       rules: [

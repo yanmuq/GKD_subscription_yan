@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -49,8 +50,9 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '更新提示-软件升级提醒',
-      matchTime: 10000,
+      name: '限时-应用提示-更新提示-软件升级提醒',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,
@@ -65,7 +67,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '局部广告-悬浮窗广告',
+      name: '持续-页面内广告-悬浮窗广告',
+      enable: false,
       desc: '关闭广告悬浮窗',
       rules: [
         {
@@ -78,9 +81,10 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '评价提示',
+      name: '限时-应用提示-评价提示',
+      enable: false,
       desc: '点击下次再说',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,
@@ -94,7 +98,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '全屏广告-会员弹窗',
+      name: '持续-全屏广告-会员弹窗',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -110,7 +115,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -133,7 +139,6 @@ export default defineGkdApp({
         {
           key: 2,
           fastQuery: true,
-          matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: '.home.view.HomeActivity',
@@ -145,9 +150,10 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '权限提示-通知权限',
+      name: '限时-应用提示-通知权限',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -161,7 +167,8 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '局部广告-照片页底部浮窗广告',
+      name: '持续-页面内广告-照片页底部浮窗广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -174,7 +181,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,

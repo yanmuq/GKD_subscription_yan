@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
+      name: '限时-开屏广告',
+      enable: true,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
@@ -26,7 +27,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-顶部卡片广告',
+      name: '持续-页面内广告-顶部卡片广告',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -53,9 +55,10 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '权限提示-通知权限',
+      name: '限时-应用提示-通知权限',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -68,9 +71,9 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '更新提示',
+      name: '持续-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -91,7 +94,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '全屏广告-播放页-插入广告',
+      name: '持续-全屏广告-播放页-插入广告',
+      enable: false,
       desc: '视频播放前或播放中途插入的广告',
       rules: [
         {

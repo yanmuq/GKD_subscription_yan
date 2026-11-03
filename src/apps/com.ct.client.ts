@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: -1,
-      name: '开屏广告',
+      name: '限时-开屏广告',
+      enable: true,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
@@ -25,9 +26,10 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '功能类-软件更新/安装后的用户引导',
+      name: '限时-应用提示-软件更新/安装后的用户引导',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -40,9 +42,10 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -63,7 +66,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-浮窗广告',
+      name: '持续-全屏广告-浮窗广告',
+      enable: false,
       desc: '会出现在首页、查询办理页面',
       fastQuery: true,
       actionMaximum: 1,
@@ -84,7 +88,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       // fastQuery: true, 实机测试使用无法跳过
       activityIds: 'com.ct.client.common.webview.OnlineBusinessWebkitActivity',
       rules: 'Image[text="tishi-close"]',
@@ -92,9 +97,10 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '权限提示-通知权限',
+      name: '限时-应用提示-通知权限',
+      enable: false,
       desc: '自动点击关闭',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       // fastQuery: true, 实机测试使用无法跳过
@@ -115,7 +121,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '功能类-右下角客服悬浮窗',
+      name: '持续-功能操作-右下角客服悬浮窗',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -137,7 +144,8 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '局部广告-悬浮广告',
+      name: '持续-页面内广告-悬浮广告',
+      enable: false,
       desc: '点击关闭',
       actionMaximum: 1,
       resetMatch: 'app',
@@ -154,7 +162,8 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '功能类-英文版未登录时自动一键登录',
+      name: '持续-功能操作-英文版未登录时自动一键登录',
+      enable: false,
       desc: '仅在使用该卡移动数据时可用',
       actionMaximum: 1,
       resetMatch: 'app',

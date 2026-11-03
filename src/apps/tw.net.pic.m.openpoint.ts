@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-每日弹窗广告',
+      name: '限时-全屏广告-每日弹窗广告',
+      enable: false,
       desc: '勾选[今日不再顯示]-点击关闭',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -33,9 +34,9 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '通知提示-i珍食公告弹窗',
+      name: '持续-应用提示弹窗-i珍食公告弹窗',
+      enable: false,
       desc: '勾选[我已了解]-点击[確認]',
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

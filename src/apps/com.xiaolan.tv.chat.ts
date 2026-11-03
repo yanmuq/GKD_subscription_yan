@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '通知提示-温馨提示弹窗',
+      name: '持续-应用提示弹窗-温馨提示弹窗',
+      enable: false,
       desc: '点击[确定]',
       rules: [
         {
@@ -31,7 +32,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '分段广告-看视频领奖励广告',
+      name: '持续-页面内广告-看视频领奖励广告',
+      enable: false,
       desc: '点击关闭-点击[放弃奖励离开]',
       fastQuery: true,
       activityIds: 'com.qq.e.ads.PortraitADActivity',
@@ -52,7 +54,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -67,7 +70,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {

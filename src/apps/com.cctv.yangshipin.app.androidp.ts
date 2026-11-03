@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
@@ -23,13 +24,13 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告-悬浮广告',
+      name: '持续-页面内广告-悬浮广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
           key: 0,
           fastQuery: true,
-          matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: 'com.tencent.videolite.android.ui.HomeActivity',
@@ -50,13 +51,16 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-弹窗广告',
+      name: '限时-全屏广告-弹窗广告',
+      resetMatch: 'app',
+      matchTime: 20000,
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
           fastQuery: true,
           forcedTime: 10000,
-          matchTime: 10000,
+          matchTime: 20000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: 'com.tencent.videolite.android.ui.HomeActivity',
@@ -68,8 +72,9 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '评价提示',
-      matchTime: 10000,
+      name: '限时-应用提示-评价提示',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -87,7 +92,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-底部关注弹窗',
+      name: '持续-全屏广告-底部关注弹窗',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {

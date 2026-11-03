@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -20,7 +21,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '评价提示',
+      name: '持续-应用提示弹窗-评价提示',
+      enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -40,7 +42,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '局部广告-右下角浮标广告',
+      name: '持续-页面内广告-右下角浮标广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -58,7 +61,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '功能类-未登录时自动点击登录',
+      name: '持续-功能操作-未登录时自动点击登录',
+      enable: false,
       desc: '仅限老年版和英文版可用',
       actionMaximum: 1,
       resetMatch: 'app',

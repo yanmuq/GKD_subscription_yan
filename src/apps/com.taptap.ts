@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '分段广告-游戏浏览页面推荐广告',
+      name: '持续-页面内广告-游戏浏览页面推荐广告',
+      enable: false,
       desc: '点击[]对此内容不感兴趣]',
       fastQuery: true,
       rules: [
@@ -37,7 +38,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '更新提示',
+      name: '持续-更新提示',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -55,7 +57,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '青少年模式-首页顶部横幅提示',
+      name: '持续-应用提示弹窗-青少年模式-首页顶部横幅提示',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',

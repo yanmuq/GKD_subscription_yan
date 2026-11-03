@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: -1,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
@@ -24,7 +25,8 @@ export default defineGkdApp({
     },
     {
       key: 0,
-      name: '局部广告-阅读页面广告',
+      name: '持续-页面内广告-阅读页面广告',
+      enable: false,
       activityIds: [
         'com.dragon.read.ad.banner.ui',
         'com.dragon.read.reader.ReaderActivity',
@@ -85,9 +87,10 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -103,7 +106,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-首页右侧悬浮广告',
+      name: '持续-页面内广告-首页右侧悬浮广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -122,7 +126,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告',
+      name: '持续-全屏广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -208,7 +213,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-阅读页面关注作者弹窗',
+      name: '持续-全屏广告-阅读页面关注作者弹窗',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -221,7 +227,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '分段广告-阅读页面广告',
+      name: '持续-页面内广告-阅读页面广告',
+      enable: false,
       fastQuery: true,
       activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
       rules: [
@@ -289,7 +296,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '评价提示-请求好评弹窗',
+      name: '持续-应用提示弹窗-请求好评弹窗',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -303,10 +311,11 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '权限提示-通知权限',
+      name: '限时-应用提示-通知权限',
+      enable: false,
       desc: '点击"取消"',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -328,7 +337,8 @@ export default defineGkdApp({
     },
     {
       key: 16,
-      name: '功能类-观看广告自动领取奖励',
+      name: '持续-功能操作-观看广告自动领取奖励',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -375,7 +385,8 @@ export default defineGkdApp({
     },
     {
       key: 17,
-      name: '评价提示-点评此书弹窗',
+      name: '持续-应用提示弹窗-点评此书弹窗',
+      enable: false,
       desc: '点击[取消]',
       actionMaximum: 1,
       resetMatch: 'app',

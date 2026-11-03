@@ -6,10 +6,11 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '全屏广告-弹窗广告',
+      name: '限时-全屏广告-弹窗广告',
+      enable: false,
       matchRoot: true,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -29,7 +30,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -41,7 +43,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '功能类-忽略升级',
+      name: '持续-功能操作-忽略升级',
+      enable: false,
       desc: '应用升级界面-自动点击忽略',
       fastQuery: true,
       activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
@@ -62,7 +65,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       desc: '自动点击关闭按钮',
       fastQuery: true,
       actionMaximum: 1,
@@ -91,9 +95,9 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '局部广告-个性化推荐卡片',
+      name: '持续-页面内广告-个性化推荐卡片',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -106,7 +110,8 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '功能类-自动点击[查看全部升级]',
+      name: '持续-功能操作-自动点击[查看全部升级]',
+      enable: false,
       desc: '应用升级页面',
       actionMaximum: 1,
       rules: [
@@ -131,7 +136,8 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '功能类-移动数据更新弹窗点击继续',
+      name: '持续-功能操作-移动数据更新弹窗点击继续',
+      enable: false,
       rules: [
         {
           fastQuery: true,

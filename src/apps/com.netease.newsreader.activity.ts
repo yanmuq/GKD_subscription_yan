@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '权限提示-通知权限',
+      name: '限时-应用提示-通知权限',
+      enable: false,
       desc: '点击暂不开启',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds:
@@ -29,7 +30,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '分段广告-首页信息流广告',
+      name: '持续-页面内广告-首页信息流广告',
+      enable: false,
       desc: '点击卡片广告x关闭按钮-关闭反馈理由弹窗',
       activityIds: 'com.netease.nr.phone.main.MainActivity',
       rules: [

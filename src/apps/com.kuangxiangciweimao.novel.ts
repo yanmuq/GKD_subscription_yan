@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -43,7 +44,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-自动签到',
+      name: '持续-功能操作-自动签到',
+      enable: false,
       desc: '点击[签到]',
       fastQuery: true,
       actionMaximum: 1,

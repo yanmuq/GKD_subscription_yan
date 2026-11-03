@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-谷歌广告',
+      name: '持续-全屏广告-谷歌广告',
+      enable: false,
       activityIds: 'com.mxtech.videoplayer.ad.ActivityMediaList',
       rules: [
         {

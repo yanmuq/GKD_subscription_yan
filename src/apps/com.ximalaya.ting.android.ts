@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-播放页广告',
+      name: '持续-页面内广告-播放页广告',
+      enable: false,
       rules: [
         {
           key: 3,
@@ -33,7 +34,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '分段广告-信息流广告',
+      name: '持续-页面内广告-信息流广告',
+      enable: false,
       desc: '点击关闭-点击屏蔽',
       fastQuery: true,
       activityIds: [
@@ -66,9 +68,10 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '青少年模式',
+      name: '限时-应用提示-青少年模式',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -84,9 +87,10 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '全屏广告-首页-专辑订阅推荐弹窗',
+      name: '限时-全屏广告-首页-专辑订阅推荐弹窗',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -100,7 +104,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -113,7 +118,8 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       desc: '取消推送通知',
       fastQuery: true,
       actionMaximum: 1,
@@ -136,7 +142,8 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '全屏广告-免流提示',
+      name: '持续-全屏广告-免流提示',
+      enable: false,
       desc: '关闭[开免流送会员]弹窗',
       rules: [
         {

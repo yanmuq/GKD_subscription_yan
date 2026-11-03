@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '其他-设为默认应用提示',
+      name: '限时-应用提示-设为默认应用提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: '.activities.MainActivity',
@@ -28,7 +29,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '权限提示-通知/链接蓝牙附件设备',
+      name: '持续-应用提示弹窗-通知/链接蓝牙附件设备',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',

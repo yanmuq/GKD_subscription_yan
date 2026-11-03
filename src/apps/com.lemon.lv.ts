@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '分段广告-导出界面底部广告',
+      name: '持续-页面内广告-导出界面底部广告',
+      enable: false,
       desc: '点击[关闭]-点击[不感兴趣]',
       fastQuery: true,
       activityIds: 'com.vega.export.edit.view.ExportActivity',
@@ -29,7 +30,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告-选择素材界面上方广告',
+      name: '持续-页面内广告-选择素材界面上方广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -43,7 +45,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-恢复创作',
+      name: '持续-功能操作-恢复创作',
+      enable: false,
       desc: '自动点击[立即恢复]按钮',
       rules: [
         {

@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: -1,
-      name: '开屏广告',
+      name: '限时-开屏广告',
+      enable: true,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -45,7 +46,8 @@ export default defineGkdApp({
     },
     {
       key: 0,
-      name: '分段广告-信息流广告',
+      name: '持续-页面内广告-信息流广告',
+      enable: false,
       desc: '出现在主页,搜索页',
       fastQuery: true,
       matchRoot: true,

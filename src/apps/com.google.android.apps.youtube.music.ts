@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-播放界面广告',
+      name: '持续-页面内广告-播放界面广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -20,7 +21,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-会员广告',
+      name: '持续-全屏广告-会员广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -47,9 +49,10 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '通知提示-隐私提醒',
+      name: '限时-应用提示-隐私提醒',
+      enable: false,
       desc: '点击[OK]',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

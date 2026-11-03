@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '分段广告-阅读页面广告',
+      name: '持续-页面内广告-阅读页面广告',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -25,7 +26,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-阅读结束后显示的广告',
+      name: '持续-全屏广告-阅读结束后显示的广告',
+      enable: false,
       fastQuery: true,
       activityIds: 'org.geometerplus.android.fbreader.FBReader',
       rules: [
@@ -41,7 +43,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-签到弹窗',
+      name: '持续-全屏广告-签到弹窗',
+      enable: false,
       activityIds: 'org.geometerplus.android.fbreader.FBReader',
       rules:
         '@TextView[id=null] < View +(2) TextView[text^="已连签"&&text*="天"]',
@@ -49,7 +52,8 @@ export default defineGkdApp({
     },
     {
       key: 99,
-      name: '局部广告-右侧悬浮红包',
+      name: '持续-页面内广告-右侧悬浮红包',
+      enable: false,
       activityIds: 'com.kmxs.reader.home.ui.HomeActivity',
       rules: {
         matches:
@@ -60,7 +64,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '全屏广告-字节视频广告',
+      name: '持续-全屏广告-字节视频广告',
+      enable: false,
       desc: '点击关闭',
       actionDelay: 300,
       rules: [
@@ -104,7 +109,8 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       rules: [
         {
           key: 1,
@@ -125,9 +131,10 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '全屏广告-今日专属推荐弹窗',
+      name: '限时-全屏广告-今日专属推荐弹窗',
+      enable: false,
       desc: '点击关闭',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

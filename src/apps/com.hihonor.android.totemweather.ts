@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-底部卡片广告',
+      name: '持续-页面内广告-底部卡片广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -25,7 +26,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '分段广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       fastQuery: true,
       activityIds: ['.WeatherHome', '.secondpage.activity.SecondPageActivity'],
       rules: [

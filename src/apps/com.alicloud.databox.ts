@@ -6,9 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '功能类-自动签到',
+      name: '持续-功能操作-自动签到',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: [
@@ -35,9 +35,10 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '全屏广告-活动弹窗',
+      name: '限时-全屏广告-活动弹窗',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -51,9 +52,10 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -67,7 +69,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '功能类-[开启相册自动备份功能]弹窗',
+      name: '持续-应用提示弹窗-[开启相册自动备份功能]弹窗',
+      enable: false,
       desc: '关闭弹窗',
       rules: [
         {
@@ -81,7 +84,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '功能类-扫描二维码登录时自动点击登录',
+      name: '持续-功能操作-扫描二维码登录时自动点击登录',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -95,7 +99,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '全屏广告-[容量使用超限]提示',
+      name: '持续-应用提示弹窗-[容量使用超限]提示',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -110,9 +115,9 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

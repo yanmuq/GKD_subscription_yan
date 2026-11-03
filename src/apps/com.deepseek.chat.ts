@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-自动折叠思考过程',
+      name: '持续-功能操作-自动折叠思考过程',
+      enable: false,
       rules: [
         {
           activityIds: 'com.deepseek.chat.MainActivity',

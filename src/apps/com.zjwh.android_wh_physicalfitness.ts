@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -138,7 +139,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '点击关闭',
       activityIds: '.mvi.home.HomeActivity',
       rules: [
@@ -193,7 +195,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '分段广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '点击关闭-不感兴趣',
       activityIds: '.mvi.home.HomeActivity',
       rules: [
@@ -232,7 +235,8 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '通知提示-公告',
+      name: '持续-应用提示弹窗-公告',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -257,7 +261,8 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '权限提示-不开启可选权限',
+      name: '持续-应用提示弹窗-不开启可选权限',
+      enable: false,
       desc: '点击[暂不开启，继续跑步]',
       rules: [
         {
@@ -277,9 +282,10 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '权限提示-定位权限',
+      name: '限时-应用提示-定位权限',
+      enable: false,
       desc: '点击取消',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

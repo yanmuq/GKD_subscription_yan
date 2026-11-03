@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '更新提示',
-      matchTime: 10000,
+      name: '限时-应用提示-更新提示',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -21,7 +22,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-超值换购弹窗',
+      name: '持续-全屏广告-超值换购弹窗',
+      enable: false,
       desc: '关闭超值换购弹窗',
       rules: [
         {
@@ -35,7 +37,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-优惠卷领取提示',
+      name: '持续-全屏广告-优惠卷领取提示',
+      enable: false,
       desc: '按下返回键关闭优惠卷领取提示',
       rules: [
         {

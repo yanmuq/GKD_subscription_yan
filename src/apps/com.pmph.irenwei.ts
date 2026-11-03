@@ -6,10 +6,11 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-抽奖弹窗',
+      name: '限时-全屏广告-抽奖弹窗',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

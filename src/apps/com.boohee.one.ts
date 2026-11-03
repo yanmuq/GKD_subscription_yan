@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '更新提示',
-      matchTime: 10000,
+      name: '限时-应用提示-更新提示',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -21,7 +22,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-发现页弹窗广告',
+      name: '持续-全屏广告-发现页弹窗广告',
+      enable: false,
       activityIds: 'com.sensorsdata.sf.ui.view.DialogActivity',
       rules:
         'LinearLayout[childCount=2] > @ImageView[id=null][clickable=true] + ImageView',
@@ -29,9 +31,9 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       desc: '点击关闭',
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

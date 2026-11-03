@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '其他-动画疯年龄限制',
+      name: '持续-应用提示弹窗-动画疯年龄限制',
+      enable: false,
       desc: '点击同意',
       rules: [
         {

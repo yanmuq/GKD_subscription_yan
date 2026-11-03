@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 10,
-      name: '全屏广告-订购 RAR 弹窗',
+      name: '持续-全屏广告-订购 RAR 弹窗',
+      enable: false,
       desc: '点击[放弃]',
       rules: [
         {

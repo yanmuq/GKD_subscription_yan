@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-出站后摇一摇广告',
+      name: '持续-全屏广告-出站后摇一摇广告',
+      enable: false,
       desc: '点击跳过',
       rules: [
         {

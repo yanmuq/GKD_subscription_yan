@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -29,7 +30,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-退出软件时的确认弹窗',
+      name: '持续-功能操作-退出软件时的确认弹窗',
+      enable: false,
       desc: '点击[确认退出]',
       rules: [
         {

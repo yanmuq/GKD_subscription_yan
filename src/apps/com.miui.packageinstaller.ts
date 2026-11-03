@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 7,
-      name: '功能类-放弃开启安全守护',
+      name: '持续-应用提示弹窗-放弃开启安全守护',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       activityIds:
@@ -29,7 +30,8 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '功能类-自动安装/更新应用',
+      name: '持续-功能操作-自动安装/更新应用',
+      enable: false,
       desc: '该规则仅适配关闭[应用安全验证]和[安全守护]的情况，可在安装页面右上角设置里关闭，关闭后的风险自行承担',
       matchRoot: true,
       fastQuery: true,
@@ -71,7 +73,8 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '功能类-自动允许应用安装软件',
+      name: '系统权限-自动允许应用安装软件',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       activityIds: [
@@ -109,7 +112,8 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      name: '功能类-安装来源不可信',
+      name: '系统权限-安装来源不可信',
+      enable: false,
       desc: '点击[授权本次安装]',
       actionMaximum: 1,
       rules: [
@@ -129,7 +133,8 @@ export default defineGkdApp({
     },
     {
       key: 16,
-      name: '功能类-关闭备案信息弹窗',
+      name: '持续-功能操作-关闭备案信息弹窗',
+      enable: false,
       desc: '点击[继续安装]',
       actionMaximum: 1,
       rules: [
@@ -150,7 +155,8 @@ export default defineGkdApp({
     },
     {
       key: 17,
-      name: '功能类-无视风险继续安装',
+      name: '持续-功能操作-无视风险继续安装',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       activityIds: 'com.miui.packageInstaller.NewInstallerPrepareActivity',
@@ -190,7 +196,8 @@ export default defineGkdApp({
     },
     {
       key: 18,
-      name: '功能类-自动勾选[已了解此应用存在风险]',
+      name: '持续-功能操作-自动勾选[已了解此应用存在风险]',
+      enable: false,
       rules: [
         {
           fastQuery: true,

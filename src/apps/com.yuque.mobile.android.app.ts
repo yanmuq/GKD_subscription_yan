@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '局部广告-"用语雀公众号"横幅提示',
+      name: '持续-页面内广告-"用语雀公众号"横幅提示',
+      enable: false,
       desc: '点x取消提示',
       rules: [
         {
@@ -19,7 +20,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '功能类-自动原图',
+      name: '持续-功能操作-自动原图',
+      enable: false,
       desc: '如果没有勾选原图, 则勾选',
       rules: [
         {

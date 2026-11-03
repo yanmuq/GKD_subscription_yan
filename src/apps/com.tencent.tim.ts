@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-自动点击查看原图',
+      name: '持续-功能操作-自动点击查看原图',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -26,7 +27,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-发送图片时自动勾选[原图]',
+      name: '持续-功能操作-发送图片时自动勾选[原图]',
+      enable: false,
       actionMaximum: 1,
       rules: [
         {

@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 3,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,

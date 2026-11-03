@@ -7,9 +7,10 @@ export default defineGkdApp({
     {
       // 小米自带电子邮件
       key: 1,
-      name: '权限提示-自启动',
+      name: '限时-应用提示-自启动',
+      enable: false,
       desc: '点击取消',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

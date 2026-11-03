@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -32,7 +33,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-VIP弹窗',
+      name: '持续-全屏广告-VIP弹窗',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -78,7 +80,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '分段广告-我的页面-右侧悬浮反馈图标',
+      name: '持续-页面内广告-我的页面-右侧悬浮反馈图标',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -102,7 +105,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '更新提示',
+      name: '持续-更新提示',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -116,7 +120,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -140,7 +145,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '功能类-播放页听歌领VIP',
+      name: '持续-功能操作-播放页听歌领VIP',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -162,7 +168,8 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '评价提示',
+      name: '持续-应用提示弹窗-评价提示',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -176,7 +183,8 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '分段广告-评论区广告',
+      name: '持续-页面内广告-评论区广告',
+      enable: false,
       fastQuery: true,
       activityIds: 'com.kugou.android.app.MediaActivity',
       rules: [
@@ -194,7 +202,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '局部广告',
+      name: '持续-页面内广告',
+      enable: false,
       rules: [
         {
           key: 0,

@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-耳机配对弹窗（仅限澎湃os3）',
+      name: '持续-应用提示弹窗-耳机配对弹窗（仅限澎湃os3）',
+      enable: false,
       desc: '点击右上角的x',
       rules: [
         {

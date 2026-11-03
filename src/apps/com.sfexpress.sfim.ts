@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 10,
-      name: '功能类-自动确认登录',
+      name: '持续-功能操作-自动确认登录',
+      enable: false,
       desc: '自动点击[登录]按钮',
       fastQuery: true,
       rules: [

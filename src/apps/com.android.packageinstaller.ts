@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-自动安装应用',
+      name: '持续-功能操作-自动安装应用',
+      enable: false,
       fastQuery: true,
       forcedTime: 10000,
       activityIds: [
@@ -69,7 +70,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-授权本次安装',
+      name: '系统权限-授权本次安装',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -87,7 +89,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '功能类-自动继续安装高危风险应用',
+      name: '持续-功能操作-自动继续安装高危风险应用',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -103,7 +106,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '功能类-勾选[已了解此应用未经检测，可能存在风险]',
+      name: '持续-功能操作-勾选[已了解此应用未经检测，可能存在风险]',
+      enable: false,
       fastQuery: true,
       activityIds: ['.PackageInterceptActivity', '.PackageInstallerActivity'],
       rules: [

@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '分段广告-首页-底部广告',
+      name: '持续-页面内广告-首页-底部广告',
+      enable: false,
       activityIds: [
         'com.xuexiaoyi.entrance.main.MainActivity',
         'com.xuexiaoyi.platform.base.arch.RouterFragmentActivity',
@@ -67,10 +68,11 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       desc: '点击以后再说',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

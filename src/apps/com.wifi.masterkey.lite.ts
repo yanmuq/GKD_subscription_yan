@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '分段广告-首页卡片广告',
+      name: '持续-页面内广告-首页卡片广告',
+      enable: false,
       fastQuery: true,
       activityIds: 'com.wifitutu.ui.main.HomeMainActivity',
       rules: [

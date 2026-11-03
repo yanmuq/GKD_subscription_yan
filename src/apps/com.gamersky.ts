@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -52,7 +53,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -103,9 +105,9 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-签到成功弹窗',
+      name: '持续-应用提示弹窗-签到成功弹窗',
+      enable: false,
       desc: '点击[确定]',
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

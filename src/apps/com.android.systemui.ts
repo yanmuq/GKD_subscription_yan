@@ -7,7 +7,8 @@ export default defineGkdApp({
     // 以下规则组快照截取自小米手机，可能不适配其他系统。
     {
       key: 1,
-      name: '功能类-自动允许网易云音乐共享整个屏幕',
+      name: '系统权限-自动允许网易云音乐共享整个屏幕',
+      enable: false,
       fastQuery: true,
       activityIds:
         '.mediaprojection.permission.MediaProjectionPermissionActivity',
@@ -36,7 +37,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-自动允许白描共享整个屏幕',
+      name: '系统权限-自动允许白描共享整个屏幕',
+      enable: false,
       fastQuery: true,
       activityIds:
         '.mediaprojection.permission.MediaProjectionPermissionActivity',
@@ -65,7 +67,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '功能类-自动允许QQ音乐共享整个屏幕',
+      name: '系统权限-自动允许QQ音乐共享整个屏幕',
+      enable: false,
       fastQuery: true,
       activityIds:
         '.mediaprojection.permission.MediaProjectionPermissionActivity',

@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '分段广告-主页广告',
+      name: '持续-页面内广告-主页广告',
+      enable: false,
       fastQuery: true,
       activityIds: 'com.videogo.main.MainTabActivity',
       rules: [
@@ -24,10 +25,11 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '全屏广告-弹窗广告',
+      name: '限时-全屏广告-弹窗广告',
+      enable: false,
       fastQuery: true,
       activityIds: ['.main.MainTabActivity', '.login.LoadingActivity'],
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

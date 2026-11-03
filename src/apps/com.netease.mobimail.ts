@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -46,7 +47,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告-邮件列表页面广告条目',
+      name: '持续-页面内广告-邮件列表页面广告条目',
+      enable: false,
       rules: [
         {
           activityIds: 'com.netease.mail.biz.main.MainITabActivity',

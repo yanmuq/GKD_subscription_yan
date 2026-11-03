@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告',
+      name: '持续-全屏广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -22,11 +23,11 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-未登录时自动点击登录',
+      name: '持续-功能操作-未登录时自动点击登录',
+      enable: false,
       desc: '仅限财富版',
       rules: [
         {
-          matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: 'cn.com.hzb.mobilebank.per.MainActivity',

@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -52,7 +53,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-邮件列表广告',
+      name: '持续-全屏广告-邮件列表广告',
+      enable: false,
       activityIds: 'com.netease.mail.biz.main.MainITabActivity',
       fastQuery: true,
       rules: [
@@ -71,8 +73,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '其他-获得成就弹窗',
-      matchTime: 10000,
+      name: '持续-应用提示弹窗-获得成就弹窗',
+      enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

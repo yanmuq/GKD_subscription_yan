@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
+      name: '限时-开屏广告',
+      enable: true,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
@@ -21,7 +22,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '功能类-从剪贴板查历史价-拒绝',
+      name: '持续-应用提示弹窗-从剪贴板查历史价-拒绝',
+      enable: false,
       desc: '点击[默默拒绝]',
       rules: [
         {

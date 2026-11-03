@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '更新提示',
+      name: '持续-更新提示',
+      enable: false,
       desc: '点击[以后再说]',
       matchRoot: true,
       fastQuery: true,
@@ -29,7 +30,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '全屏广告-会员广告',
+      name: '持续-全屏广告-会员广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {

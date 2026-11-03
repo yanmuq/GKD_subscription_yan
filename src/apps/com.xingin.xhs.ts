@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
+      name: '限时-开屏广告',
+      enable: true,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -49,7 +50,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -82,9 +84,10 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -115,7 +118,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '分段广告-信息流广告',
+      name: '持续-页面内广告-信息流广告',
+      enable: false,
       desc: '长按"赞助"/"广告"标识的卡片-点"不感兴趣"',
       fastQuery: true,
       activityIds: 'com.xingin.xhs.index.v2.IndexActivityV2',
@@ -147,7 +151,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-优惠券弹窗',
+      name: '持续-全屏广告-优惠券弹窗',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -161,7 +166,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '评价提示-评分弹窗',
+      name: '持续-应用提示弹窗-评分弹窗',
+      enable: false,
       desc: '返回关闭弹窗',
       fastQuery: true,
       actionMaximum: 1,
@@ -179,7 +185,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '功能类-评论区-自动展开回复',
+      name: '持续-功能操作-评论区-自动展开回复',
+      enable: false,
       desc: '自动展开更多回复',
       rules: [
         {
@@ -193,7 +200,8 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '局部广告-你可能感兴趣的人',
+      name: '持续-页面内广告-你可能感兴趣的人',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -205,7 +213,8 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '局部广告-关闭首页信息流中推荐博主',
+      name: '持续-页面内广告-关闭首页信息流中推荐博主',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -218,7 +227,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '局部广告-直播间各种卡片',
+      name: '持续-页面内广告-直播间各种卡片',
+      enable: false,
       activityIds: 'com.xingin.alpha.audience.v2.AlphaAudienceActivityV2',
       rules: [
         {

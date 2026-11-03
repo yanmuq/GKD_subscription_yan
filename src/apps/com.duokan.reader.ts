@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '全屏广告-首页弹窗广告',
+      name: '限时-全屏广告-首页弹窗广告',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -21,7 +22,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-小说推荐弹窗',
+      name: '持续-全屏广告-小说推荐弹窗',
+      enable: false,
       rules: [
         {
           key: 1,
@@ -36,7 +38,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '局部广告-小说页广告',
+      name: '持续-页面内广告-小说页广告',
+      enable: false,
       desc: '小说页面下方出现的条形广告',
       rules: [
         {
@@ -50,7 +53,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '分段广告-小说页全屏卡片广告',
+      name: '持续-页面内广告-小说页全屏卡片广告',
+      enable: false,
       desc: '点击关闭-点击确定按钮',
       fastQuery: true,
       activityIds: 'com.duokan.reader.DkMainActivity',
@@ -72,10 +76,11 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       desc: '点击以后再说',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

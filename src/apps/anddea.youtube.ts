@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-评论区自动点击[翻译成中文]',
+      name: '持续-功能操作-评论区自动点击[翻译成中文]',
+      enable: false,
       rules: [
         {
           fastQuery: true,

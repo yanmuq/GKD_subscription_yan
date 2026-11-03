@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '功能类-不开启自动更新',
+      name: '限时-应用提示-不开启自动更新',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -28,7 +29,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '功能类-流量更新点击继续下载',
+      name: '持续-功能操作-流量更新点击继续下载',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -43,7 +45,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-不开启流量自动更新',
+      name: '持续-应用提示弹窗-不开启流量自动更新',
+      enable: false,
       rules: [
         {
           fastQuery: true,

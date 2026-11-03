@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: -1,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
@@ -25,7 +26,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告',
+      name: '持续-页面内广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -39,7 +41,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '更新提示-关闭更新弹窗',
+      name: '持续-更新提示-关闭更新弹窗',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -58,7 +61,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       desc: '点击[暂不]/[以后再说]/[禁止]',
       fastQuery: true,
       actionMaximum: 1,
@@ -87,7 +91,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '功能类-自动勾选原图',
+      name: '持续-功能操作-自动勾选原图',
+      enable: false,
       desc: '聊天发送图片时自动勾选原图',
       actionMaximum: 1,
       rules: [
@@ -106,7 +111,8 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '其他-休息提醒',
+      name: '持续-应用提示弹窗-休息提醒',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -121,7 +127,8 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '全屏广告-小组件弹窗',
+      name: '持续-应用提示弹窗-小组件弹窗',
+      enable: false,
       desc: '关闭弹窗',
       actionMaximum: 1,
       resetMatch: 'app',
@@ -160,7 +167,8 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      name: '全屏广告',
+      name: '持续-全屏广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -200,7 +208,8 @@ export default defineGkdApp({
     },
     {
       key: 19,
-      name: '权限提示-通讯录权限',
+      name: '持续-应用提示弹窗-通讯录权限',
+      enable: false,
       desc: '点击[拒绝]',
       actionMaximum: 1,
       resetMatch: 'app',
@@ -220,7 +229,8 @@ export default defineGkdApp({
     },
     {
       key: 20,
-      name: '青少年模式',
+      name: '持续-应用提示弹窗-青少年模式',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -247,10 +257,10 @@ export default defineGkdApp({
     },
     {
       key: 21,
-      name: '权限提示-定位权限',
+      name: '持续-应用提示弹窗-定位权限',
+      enable: false,
       desc: '直接关闭所有类似形状窗口',
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: '.search.activity.SearchResultActivity',
@@ -273,7 +283,8 @@ export default defineGkdApp({
     },
     {
       key: 22,
-      name: '全屏广告-汽水音乐VIP',
+      name: '持续-全屏广告-汽水音乐VIP',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -296,7 +307,8 @@ export default defineGkdApp({
     },
     {
       key: 23,
-      name: '其他-个性化推荐弹窗',
+      name: '持续-应用提示弹窗-个性化推荐弹窗',
+      enable: false,
       desc: '点击[稍后再说]',
       rules: [
         {
@@ -313,7 +325,8 @@ export default defineGkdApp({
     },
     {
       key: 24,
-      name: '全屏广告-视频推荐广告',
+      name: '持续-全屏广告-视频推荐广告',
+      enable: false,
       desc: '通过返回操作跳过广告',
       rules: [
         {
@@ -343,7 +356,8 @@ export default defineGkdApp({
     },
     {
       key: 26,
-      name: '功能类-自动领取别人发的红包',
+      name: '持续-功能操作-自动领取别人发的红包',
+      enable: false,
       desc: '点击 ①抖音红包 ②弹窗-开红包 ③返回 ④x掉已领完弹窗',
       fastQuery: true,
       activityIds: '.fund.redpacket.RedPacketReceiveActivity',
@@ -390,7 +404,8 @@ export default defineGkdApp({
     },
     {
       key: 27,
-      name: '功能类-自动抢口令红包',
+      name: '持续-功能操作-自动抢口令红包',
+      enable: false,
       desc: '点击 ①口令红包 ②弹窗 ③一键发口令',
       fastQuery: true,
       rules: [
@@ -426,7 +441,8 @@ export default defineGkdApp({
     },
     {
       key: 28,
-      name: '权限提示-相机权限',
+      name: '持续-应用提示弹窗-相机权限',
+      enable: false,
       desc: '点击[以后再说]',
       actionMaximum: 1,
       resetMatch: 'app',

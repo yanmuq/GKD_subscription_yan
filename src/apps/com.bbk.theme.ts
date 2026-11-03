@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-推广弹窗',
+      name: '持续-全屏广告-推广弹窗',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -21,7 +22,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-[添加主题卡片至桌面]弹窗',
+      name: '持续-应用提示弹窗-[添加主题卡片至桌面]弹窗',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {

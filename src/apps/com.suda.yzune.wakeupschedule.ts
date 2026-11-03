@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '评价提示',
+      name: '持续-应用提示弹窗-评价提示',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -19,7 +20,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '更新提示',
+      name: '持续-更新提示',
+      enable: false,
       rules: [
         {
           fastQuery: true,

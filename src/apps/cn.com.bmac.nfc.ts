@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       desc: '点击[此广告不再提示]',
       fastQuery: true,
       actionMaximum: 1,
@@ -23,7 +24,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-跳过协议',
+      name: '持续-功能操作-跳过协议',
+      enable: false,
       desc: '点击[同意]',
       fastQuery: true,
       actionMaximum: 1,

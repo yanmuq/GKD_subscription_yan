@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '分段广告-首页推荐卡片广告',
+      name: '持续-页面内广告-首页推荐卡片广告',
+      enable: false,
       desc: '需二次点击关闭原因',
       fastQuery: true,
       activityIds: [
@@ -45,7 +46,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '更新提示',
+      name: '持续-更新提示',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -60,7 +62,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '局部广告-右下角悬浮窗',
+      name: '持续-页面内广告-右下角悬浮窗',
+      enable: false,
       matchTime: 10000,
       actionMaximum: 1,
       rules: [
@@ -82,7 +85,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '局部广告-文章底部卡片广告',
+      name: '持续-页面内广告-文章底部卡片广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -96,7 +100,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '局部广告-评论区信息流广告',
+      name: '持续-页面内广告-评论区信息流广告',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
       rules: [
@@ -118,7 +123,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -140,7 +146,8 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '局部广告-选车页卡片广告',
+      name: '持续-页面内广告-选车页卡片广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -152,7 +159,8 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '局部广告-车型页面右下角直播悬浮窗',
+      name: '持续-页面内广告-车型页面右下角直播悬浮窗',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -165,7 +173,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '评价提示',
+      name: '持续-应用提示弹窗-评价提示',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',

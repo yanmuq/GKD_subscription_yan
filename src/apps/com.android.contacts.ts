@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
       actionMaximum: 1,
@@ -25,7 +26,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '更新提示',
+      name: '持续-更新提示',
+      enable: false,
       desc: '点击[取消]',
       fastQuery: true,
       actionMaximum: 1,

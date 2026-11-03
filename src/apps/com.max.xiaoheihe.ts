@@ -6,10 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-签到成功弹窗',
+      name: '持续-应用提示弹窗-签到成功弹窗',
+      enable: false,
       desc: '返回关闭弹窗',
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -25,7 +25,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -42,7 +43,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '功能类-自动点击查看原图',
+      name: '持续-功能操作-自动点击查看原图',
+      enable: false,
       rules: [
         {
           fastQuery: true,

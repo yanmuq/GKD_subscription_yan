@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '局部广告-直播间悬浮广告',
+      name: '持续-页面内广告-直播间悬浮广告',
+      enable: false,
       activityIds: 'com.duowan.kiwi.liveroom.ChannelPage',
       rules: [
         {
@@ -45,9 +46,10 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -60,9 +62,10 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-弹窗广告',
+      name: '限时-全屏广告-弹窗广告',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -77,10 +80,11 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '其他-root提示',
+      name: '限时-应用提示-root提示',
+      enable: false,
       desc: '点击确认',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -45,7 +46,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '分段广告-信息流广告',
+      name: '持续-页面内广告-信息流广告',
+      enable: false,
       desc: '信息流广告-点击x按钮-点击内容质量差',
       activityIds: ['com.hexin.plat.android.Hexin'],
       rules: [
@@ -66,7 +68,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '局部广告-底部产品广告',
+      name: '持续-页面内广告-底部产品广告',
+      enable: false,
       activityIds: ['com.hexin.plat.android'],
       rules: [
         {

@@ -6,10 +6,11 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-热门推荐关闭',
+      name: '限时-全屏广告-热门推荐关闭',
+      enable: false,
       desc: '关闭应用推广',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -23,7 +24,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-更新与已安装界面-点击[查看更多]',
+      name: '持续-功能操作-更新与已安装界面-点击[查看更多]',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -41,7 +43,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '分段广告-更新界面软件推荐',
+      name: '持续-页面内广告-更新界面软件推荐',
+      enable: false,
       activityIds: [
         'com.apkpure.aegon.main.activity.MainTabActivity',
         'com.apkpure.aegon.main.activity.AppManagerActivity',
@@ -71,7 +74,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '功能类-添加桌面快捷方式',
+      name: '持续-应用提示弹窗-添加桌面快捷方式',
+      enable: false,
       desc: '下次添加',
       rules: [
         {
@@ -83,7 +87,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -128,9 +133,9 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '局部广告-悬浮广告',
+      name: '持续-页面内广告-悬浮广告',
+      enable: false,
       desc: '点击关闭',
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -146,7 +151,8 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -168,7 +174,8 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '局部广告-电报频道推广横幅',
+      name: '持续-页面内广告-电报频道推广横幅',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {

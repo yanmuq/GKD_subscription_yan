@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-Play保护机制弹窗',
+      name: '持续-应用提示弹窗-Play保护机制弹窗',
+      enable: false,
       desc: '点击[不发送]/[拒绝]',
       rules: [
         {
@@ -23,7 +24,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       desc: '点击[以后再说]/[不用了]',
       fastQuery: true,
       actionMaximum: 1,
@@ -60,7 +62,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '功能类-不开启生物识别支付',
+      name: '持续-应用提示弹窗-不开启生物识别支付',
+      enable: false,
       desc: '点击[以后再说]',
       rules: [
         {
@@ -77,7 +80,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '通知提示-隐私政策更新',
+      name: '持续-应用提示弹窗-隐私政策更新',
+      enable: false,
       rules: [
         {
           fastQuery: true,

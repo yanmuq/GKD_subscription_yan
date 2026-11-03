@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-谷歌填充密码自动授权',
+      name: '系统权限-谷歌填充密码自动授权',
+      enable: false,
       desc: '勾选[不再显示]-点击[使用]',
       fastQuery: true,
       activityIds: 'com.google.android.gms.autofill.ui.AutofillDialogActivity',

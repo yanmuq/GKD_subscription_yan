@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -27,7 +28,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-视频播放时的弹窗广告',
+      name: '持续-全屏广告-视频播放时的弹窗广告',
+      enable: false,
       rules: [
         {
           key: 0,

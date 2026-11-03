@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-桌面端登录确认',
+      name: '持续-功能操作-桌面端登录确认',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -20,7 +21,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '功能类-自动查看原图',
+      name: '持续-功能操作-自动查看原图',
+      enable: false,
       desc: '查看图片时自动点击"查看原图"',
       rules: [
         {
@@ -34,7 +36,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '功能类-自动发送原图',
+      name: '持续-功能操作-自动发送原图',
+      enable: false,
       desc: '发送图片时自动勾选"原图"',
       actionMaximum: 1, // 勾选节点 checkable=false，无法区分勾选前后 https://i.gkd.li/i/17711293
       rules: [

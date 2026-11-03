@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
@@ -23,7 +24,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '局部广告-播放界面直播浮窗',
+      name: '持续-页面内广告-播放界面直播浮窗',
+      enable: false,
       fastQuery: true,
       activityIds: 'com.android.mediacenter.MainActivity',
       rules: [
@@ -36,7 +38,8 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -59,7 +62,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -84,7 +88,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '分段广告-首页横幅广告',
+      name: '持续-页面内广告-首页横幅广告',
+      enable: false,
       fastQuery: true,
       rules: [
         {

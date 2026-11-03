@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '分段广告-朋友圈广告',
+      name: '持续-页面内广告-朋友圈广告',
+      enable: false,
       desc: '警告⚠️：该规则有可能会误触，请谨慎开启',
       activityIds: [
         '.plugin.sns.ui.SnsTimeLineUI',
@@ -117,7 +118,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '功能类-电脑微信快捷自动登录',
+      name: '持续-功能操作-电脑微信快捷自动登录',
+      enable: false,
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -141,7 +143,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-自动授权登录',
+      name: '持续-功能操作-自动授权登录',
+      enable: false,
       desc: '自动允许使用头像昵称等',
       fastQuery: true,
       actionMaximum: 1,
@@ -179,7 +182,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '功能类-微信读书网页版扫码登录自动授权',
+      name: '持续-功能操作-微信读书网页版扫码登录自动授权',
+      enable: false,
       matchTime: 10000,
       actionMaximum: 1,
       activityIds: '.plugin.webview.ui.tools.MMWebViewUI',
@@ -200,7 +204,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '功能类-自动领取微信红包',
+      name: '持续-功能操作-自动领取微信红包',
+      enable: false,
       desc: '自动领取私聊红包,群聊红包',
       fastQuery: true,
       rules: [
@@ -251,7 +256,8 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '功能类-自动选中发送原图',
+      name: '持续-功能操作-自动选中发送原图',
+      enable: false,
       desc: '自动选中底部中间的发送原图，可手动取消勾选',
       actionMaximum: 1,
       activityIds: [
@@ -284,7 +290,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '功能类-自动查看原图',
+      name: '持续-功能操作-自动查看原图',
+      enable: false,
       desc: '自动点击底部左侧[查看原图]按钮',
       activityIds: ['.ui.chatting.gallery.ImageGalleryUI', '.ui.LauncherUI'],
       rules: [
@@ -314,7 +321,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '开屏广告-微信小程序',
+      name: '持续-小程序开屏广告-微信小程序',
+      enable: true,
       fastQuery: true,
       matchTime: 10000,
       forcedTime: 10000,
@@ -342,7 +350,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '功能类-网页版文件传输助手扫码自动授权',
+      name: '持续-功能操作-网页版文件传输助手扫码自动授权',
+      enable: false,
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -356,7 +365,8 @@ export default defineGkdApp({
     },
     {
       key: 17,
-      name: '青少年模式',
+      name: '持续-应用提示弹窗-青少年模式',
+      enable: false,
       fastQuery: true,
       matchTime: 20000,
       actionMaximum: 1,
@@ -385,7 +395,8 @@ export default defineGkdApp({
     },
     {
       key: 18,
-      name: '功能类-青少年模式自动点击验证密码',
+      name: '持续-功能操作-青少年模式自动点击验证密码',
+      enable: false,
       desc: '点击“验证密码”以申请临时访问',
       matchTime: 10000,
       actionMaximum: 1,
@@ -407,7 +418,8 @@ export default defineGkdApp({
     },
     {
       key: 19,
-      name: '功能类-订阅号-展开更早的消息',
+      name: '持续-功能操作-订阅号-展开更早的消息',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -425,7 +437,8 @@ export default defineGkdApp({
     },
     {
       key: 22,
-      name: '功能类-开启青少年模式后的每日验证',
+      name: '持续-功能操作-开启青少年模式后的每日验证',
+      enable: false,
       desc: '点击"验证密码"',
       rules: [
         {
@@ -438,7 +451,8 @@ export default defineGkdApp({
     },
     {
       key: 25,
-      name: '局部广告-订阅号消息-推荐文章',
+      name: '持续-页面内广告-订阅号消息-推荐文章',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -452,7 +466,8 @@ export default defineGkdApp({
     },
     {
       key: 26,
-      name: '功能类-付款后自动点击完成/返回商家',
+      name: '持续-功能操作-付款后自动点击完成/返回商家',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -481,7 +496,8 @@ export default defineGkdApp({
     },
     {
       key: 28,
-      name: '分段广告-订阅号消息-视频推荐',
+      name: '持续-页面内广告-订阅号消息-视频推荐',
+      enable: false,
       desc: '点击[X]-点击[不喜欢此类视频]-点击[确定]',
       activityIds:
         '.plugin.brandservice.ui.flutter.BizFlutterTLFlutterViewActivity',
@@ -517,7 +533,8 @@ export default defineGkdApp({
     },
     {
       key: 29,
-      name: '功能类-解锁 Windows 微信',
+      name: '持续-功能操作-解锁 Windows 微信',
+      enable: false,
       desc: '点击[解锁]',
       rules: [
         {
@@ -538,7 +555,8 @@ export default defineGkdApp({
     },
     {
       key: 30,
-      name: '全屏广告-文档页面-腾讯文档APP弹窗',
+      name: '持续-应用提示弹窗-文档页面-腾讯文档APP弹窗',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -554,7 +572,8 @@ export default defineGkdApp({
     },
     {
       key: 31,
-      name: '分段广告-订阅号消息-推荐阅读',
+      name: '持续-页面内广告-订阅号消息-推荐阅读',
+      enable: false,
       desc: '点击关闭',
       activityIds:
         '.plugin.brandservice.ui.flutter.BizFlutterTLFlutterViewActivity',
@@ -583,9 +602,9 @@ export default defineGkdApp({
     },
     {
       key: 32,
-      name: '权限提示-权限申请弹窗',
+      name: '持续-应用提示弹窗-权限申请弹窗',
+      enable: false,
       desc: '点击取消',
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -601,7 +620,8 @@ export default defineGkdApp({
     },
     {
       key: 34,
-      name: '功能类-付款时自动点击[支付]',
+      name: '持续-功能操作-付款时自动点击[支付]',
+      enable: false,
       actionMaximum: 1,
       rules: [
         {
@@ -631,7 +651,8 @@ export default defineGkdApp({
     },
     {
       key: 35,
-      name: '分段广告-公众号文章内广告',
+      name: '持续-页面内广告-公众号文章内广告',
+      enable: false,
       desc: '注意⚠️：该规则有概率误触，请谨慎开启',
       activityIds: [
         '.plugin.brandservice.ui.timeline.preload.ui.TmplWebView', //调整为TmplWebView, 同时兼容多种ID
@@ -711,7 +732,8 @@ export default defineGkdApp({
     },
     {
       key: 36,
-      name: '功能类-自动点击[查看原视频]',
+      name: '持续-功能操作-自动点击[查看原视频]',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -724,7 +746,8 @@ export default defineGkdApp({
     },
     {
       key: 37,
-      name: '全屏广告-小程序弹窗广告',
+      name: '持续-全屏广告-小程序弹窗广告',
+      enable: false,
       desc: '点击关闭',
       matchTime: 20000,
       // actionMaximum: 1,
@@ -749,7 +772,8 @@ export default defineGkdApp({
     },
     {
       key: 38,
-      name: '功能类-自动语音转文字',
+      name: '持续-功能操作-自动语音转文字',
+      enable: false,
       desc: '点击语音旁边的转文字',
       rules: [
         {
@@ -771,7 +795,8 @@ export default defineGkdApp({
     },
     {
       key: 39,
-      name: '功能类-语音/视频通话呼入10秒后自动点击接听',
+      name: '持续-功能操作-语音/视频通话呼入10秒后自动点击接听',
+      enable: false,
       rules: [
         {
           matchTime: 15000,
@@ -788,7 +813,8 @@ export default defineGkdApp({
     },
     {
       key: 40,
-      name: '功能类-点击语音条菜单里的转文字',
+      name: '持续-功能操作-点击语音条菜单里的转文字',
+      enable: false,
       desc: '点击 长按语音条后弹出的菜单 中的转文字',
       rules: [
         {
@@ -810,7 +836,8 @@ export default defineGkdApp({
     },
     {
       key: 41,
-      name: '功能类-自动接龙',
+      name: '持续-功能操作-自动接龙',
+      enable: false,
       desc: '手动点接龙后点击加号再点击发送',
       fastQuery: true,
       activityIds: '.plugin.groupsolitaire.ui.GroupSolitatireEditUI',
@@ -833,7 +860,8 @@ export default defineGkdApp({
     },
     {
       key: 42,
-      name: '功能类-自动点击未读消息（头像右上角为数字）',
+      name: '持续-功能操作-自动点击未读消息（头像右上角为数字）',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -846,7 +874,8 @@ export default defineGkdApp({
     },
     {
       key: 43,
-      name: '功能类-自动点击未读消息（头像右上角为红点）',
+      name: '持续-功能操作-自动点击未读消息（头像右上角为红点）',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -859,7 +888,8 @@ export default defineGkdApp({
     },
     {
       key: 44,
-      name: '功能类-自动允许打开外部应用',
+      name: '持续-功能操作-自动允许打开外部应用',
+      enable: false,
       desc: '点击允许',
       rules: [
         {

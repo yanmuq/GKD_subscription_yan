@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-提示没有网络时点击[重试/确定]',
+      name: '持续-功能操作-提示没有网络时点击[重试/确定]',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -25,7 +26,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-提示非WIFI环境时点击[继续]，使用流量播放',
+      name: '持续-功能操作-提示非WIFI环境时点击[继续]，使用流量播放',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -47,10 +49,11 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '权限提示-通知权限',
+      name: '限时-应用提示-通知权限',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -63,7 +66,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '功能类-电脑端登录自动确认',
+      name: '持续-功能操作-电脑端登录自动确认',
+      enable: false,
       rules: [
         {
           fastQuery: true,

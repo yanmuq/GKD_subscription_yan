@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       activityIds: 'com.xinhang.mobileclient.home.activity.HomeActivity',
       rules: [
         {
@@ -23,7 +24,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-右侧悬浮广告',
+      name: '持续-页面内广告-右侧悬浮广告',
+      enable: false,
       rules: [
         {
           activityIds: 'com.xinhang.mobileclient.home.activity.HomeActivity',

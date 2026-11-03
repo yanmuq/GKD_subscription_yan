@@ -6,9 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 10,
-      name: '功能类-跳过实体号码链接',
+      name: '持续-应用提示弹窗-跳过实体号码链接',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: [

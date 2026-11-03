@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '分段广告-为什么不希望看到这条推广',
+      name: '持续-页面内广告-为什么不希望看到这条推广',
+      enable: false,
       desc: '点击"不感兴趣"',
       activityIds: [
         'com.xiaomi.ad.feedback',

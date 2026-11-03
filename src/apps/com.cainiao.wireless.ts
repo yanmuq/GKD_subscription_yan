@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -87,7 +88,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -128,9 +130,10 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -143,9 +146,10 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '权限提示-通知权限',
+      name: '限时-应用提示-通知权限',
+      enable: false,
       desc: '自动点击关闭',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,
@@ -154,7 +158,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '评价提示',
+      name: '持续-应用提示弹窗-评价提示',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -166,7 +171,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '功能类-询问[是否要查询包裹]弹窗',
+      name: '持续-功能操作-询问[是否要查询包裹]弹窗',
+      enable: false,
       desc: '点击[立即查看]',
       rules: [
         {
@@ -182,7 +188,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '功能类-包裹页面-自动展开更多物流信息',
+      name: '持续-功能操作-包裹页面-自动展开更多物流信息',
+      enable: false,
       desc: '点击[展开]',
       rules: [
         {
@@ -197,7 +204,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '其他-好友代取功能提示',
+      name: '持续-应用提示弹窗-好友代取功能提示',
+      enable: false,
       rules: [
         {
           fastQuery: true,

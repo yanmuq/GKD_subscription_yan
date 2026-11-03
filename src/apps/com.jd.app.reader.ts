@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -47,8 +48,9 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-首页弹窗广告',
-      matchTime: 10000,
+      name: '限时-全屏广告-首页弹窗广告',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -63,7 +65,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-阅读页面弹窗广告',
+      name: '持续-全屏广告-阅读页面弹窗广告',
+      enable: false,
       rules: [
         {
           activityIds: 'com.jd.read.engine.activity.EngineReaderActivity',

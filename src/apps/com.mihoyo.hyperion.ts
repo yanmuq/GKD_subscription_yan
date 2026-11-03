@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 3,
-      name: '功能类-自动打卡',
+      name: '持续-功能操作-自动打卡',
+      enable: false,
       desc: '点击[打卡],切换板块自动签到',
       rules: [
         {
@@ -23,9 +24,10 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '全屏广告-游戏版本活动',
+      name: '限时-全屏广告-游戏版本活动',
+      enable: false,
       desc: '点击关闭',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -40,7 +42,8 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '分段广告-游戏版本活动',
+      name: '持续-页面内广告-游戏版本活动',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
       activityIds: '.main.HyperionMainActivity',
@@ -63,7 +66,8 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '功能类-米游自动签到全家桶',
+      name: '持续-功能操作-米游自动签到全家桶',
+      enable: false,
       desc: '包含崩坏3、绝区零、原神、星穹铁道',
       forcedTime: 10000,
       activityIds: '.web2.MiHoYoWebActivity',
@@ -147,7 +151,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       rules: [
         {
           fastQuery: true,

@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 5,
-      name: '评价提示-好评反馈',
+      name: '限时-应用提示-好评反馈',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

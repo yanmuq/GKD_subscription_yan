@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
+      name: '限时-开屏广告',
+      enable: true,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
@@ -34,7 +35,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '分段广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '点击[关闭]-点击[直接关闭]/[不感兴趣]',
       rules: [
         {
@@ -95,7 +97,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
       rules: [
@@ -121,7 +124,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -163,7 +167,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '全屏广告-VIP弹窗',
+      name: '持续-全屏广告-VIP弹窗',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -207,7 +212,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '更新提示',
+      name: '持续-更新提示',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -233,7 +239,8 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '功能类-扫码后自动点击[授权登录]',
+      name: '持续-功能操作-扫码后自动点击[授权登录]',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -245,7 +252,8 @@ export default defineGkdApp({
     },
     {
       key: 16,
-      name: '分段广告-搜索页广告',
+      name: '持续-页面内广告-搜索页广告',
+      enable: false,
       desc: '该规则触发时会导致输入法收起',
       fastQuery: true,
       activityIds: '.music.biz.search.activity.SearchActivity',

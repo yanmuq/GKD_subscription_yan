@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-自选页面广告',
+      name: '持续-页面内广告-自选页面广告',
+      enable: false,
       rules: [
         {
           activityIds:
@@ -19,7 +20,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '其他-自选页面缩写提示信息',
+      name: '持续-应用提示弹窗-自选页面缩写提示信息',
+      enable: false,
       rules: [
         {
           activityIds:
@@ -32,9 +34,10 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -48,7 +51,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -70,10 +74,11 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '评价提示-好评弹窗',
+      name: '限时-应用提示-好评弹窗',
+      enable: false,
       desc: '点击下次再说',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

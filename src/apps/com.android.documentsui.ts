@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-允许第三方应用访问文件夹',
+      name: '系统权限-允许第三方应用访问文件夹',
+      enable: false,
       desc: '点击允许',
       rules: [
         {
@@ -22,7 +23,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-使用此文件夹',
+      name: '系统权限-使用此文件夹',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -34,7 +36,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '功能类-自动选择排序方式[修改日期（从新到旧）]',
+      name: '持续-功能操作-自动选择排序方式[修改日期（从新到旧）]',
+      enable: false,
       rules: [
         {
           fastQuery: true,

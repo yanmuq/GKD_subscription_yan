@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '通知提示-套餐限额提示',
+      name: '持续-应用提示弹窗-套餐限额提示',
+      enable: false,
       rules: [
         {
           key: 0,

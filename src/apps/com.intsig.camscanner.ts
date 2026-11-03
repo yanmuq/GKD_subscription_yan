@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-主页面上方广告',
+      name: '持续-页面内广告-主页面上方广告',
+      enable: false,
       activityIds: 'com.intsig.camscanner.mainmenu.mainactivity.MainActivity',
       rules:
         '[id="com.intsig.camscanner:id/card_ad_tag"] + [id="com.intsig.camscanner:id/card_close"]',
@@ -15,8 +16,9 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-开通会员', // 该广告在开屏完成后立即弹出
-      matchTime: 10000,
+      name: '限时-全屏广告-开通会员',
+      enable: false, // 该广告在开屏完成后立即弹出
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -39,7 +41,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '其他-关闭[发现新截图]提示',
+      name: '持续-应用提示弹窗-关闭[发现新截图]提示',
+      enable: false,
       rules: [
         {
           fastQuery: true,

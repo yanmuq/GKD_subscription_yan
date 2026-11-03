@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 8,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -31,7 +32,8 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       desc: '自动点击暂不开启',
       fastQuery: true,
       rules: [
@@ -45,7 +47,8 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '权限提示-定位权限',
+      name: '持续-应用提示弹窗-定位权限',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -71,7 +74,8 @@ export default defineGkdApp({
     },
     {
       key: 17,
-      name: '分段广告-信息流广告',
+      name: '持续-页面内广告-信息流广告',
+      enable: false,
       desc: '点击关闭-点击[不感兴趣]/[不想看到此类内容]',
       fastQuery: true,
       activityIds: [
@@ -153,10 +157,11 @@ export default defineGkdApp({
     },
     {
       key: 18,
-      name: '评价提示-APP评分弹窗',
+      name: '限时-应用提示-APP评分弹窗',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -169,7 +174,8 @@ export default defineGkdApp({
     },
     {
       key: 19,
-      name: '功能类-自动点击查看原图',
+      name: '持续-功能操作-自动点击查看原图',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -181,7 +187,8 @@ export default defineGkdApp({
     },
     {
       key: 20,
-      name: '功能类-超话自动签到',
+      name: '持续-功能操作-超话自动签到',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -221,7 +228,8 @@ export default defineGkdApp({
     },
     {
       key: 22,
-      name: '功能类-超话一键签到',
+      name: '持续-功能操作-超话一键签到',
+      enable: false,
       desc: '点击[一键签到]',
       rules: [
         {
@@ -239,7 +247,8 @@ export default defineGkdApp({
     },
     {
       key: 23,
-      name: '其他-关闭猪手提示',
+      name: '持续-应用提示弹窗-关闭猪手提示',
+      enable: false,
       desc: '点击[取消]',
       rules: [
         {
@@ -253,7 +262,8 @@ export default defineGkdApp({
     },
     {
       key: 24,
-      name: '功能类-关闭点赞时的验证',
+      name: '持续-功能操作-关闭点赞时的验证',
+      enable: false,
       rules: [
         {
           activityIds: '.geetest.GeetCheckActivityForNet',
@@ -266,7 +276,8 @@ export default defineGkdApp({
     },
     {
       key: 25,
-      name: '功能类-关主页自动切换到[关注的人]TAB',
+      name: '持续-功能操作-关主页自动切换到[关注的人]TAB',
+      enable: false,
       actionMaximum: 1,
       rules: [
         {
@@ -280,7 +291,8 @@ export default defineGkdApp({
     },
     {
       key: 26,
-      name: '分段广告-评论区博主内容推荐',
+      name: '持续-页面内广告-评论区博主内容推荐',
+      enable: false,
       desc: '点击关闭-点击[不感兴趣]/[不想看到此类内容]',
       fastQuery: true,
       activityIds: [
@@ -310,7 +322,8 @@ export default defineGkdApp({
     },
     {
       key: 27,
-      name: '分段广告-评论区荐读',
+      name: '持续-页面内广告-评论区荐读',
+      enable: false,
       fastQuery: true,
       activityIds: [
         '.feed.detailrefactor.DetailPageActivity',

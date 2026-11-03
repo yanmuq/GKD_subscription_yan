@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: -1,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -35,7 +36,8 @@ export default defineGkdApp({
     },
     {
       key: 0,
-      name: '分段广告-信息流广告',
+      name: '持续-页面内广告-信息流广告',
+      enable: false,
       activityIds: 'com.uc.browser.InnerUCMobile',
       rules: [
         {
@@ -60,8 +62,9 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '权限提示-通知权限',
-      matchTime: 10000,
+      name: '限时-应用提示-通知权限',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -74,7 +77,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '其他-请求添加桌面快捷方式弹窗',
+      name: '持续-应用提示弹窗-请求添加桌面快捷方式弹窗',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {

@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '开屏广告',
-      matchTime: 10000,
+      name: '限时-开屏广告',
+      enable: true,
+      matchTime: 20000,
       actionMaximum: 1, // 跳过节点可能延迟消失导致误触，限制触发次数
       resetMatch: 'app',
       priorityTime: 10000,

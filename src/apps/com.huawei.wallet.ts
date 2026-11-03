@@ -6,10 +6,11 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-钱包扩展服务提示',
+      name: '限时-应用提示-钱包扩展服务提示',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -22,7 +23,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-小额免密支付弹窗',
+      name: '持续-应用提示弹窗-小额免密支付弹窗',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -37,7 +39,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '分段广告-首页卡片广告',
+      name: '持续-页面内广告-首页卡片广告',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -58,7 +61,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '功能类-支付成功后点击关闭',
+      name: '持续-功能操作-支付成功后点击关闭',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -71,7 +75,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '权限提示-NFC权限',
+      name: '持续-应用提示弹窗-NFC权限',
+      enable: false,
       desc: '点击取消',
       rules: [
         {

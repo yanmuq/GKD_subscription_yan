@@ -8,18 +8,17 @@ export const YOUTH_MODE_ORDER = -8; // 青少年模式
 export default defineGkdGlobalGroups([
   {
     key: 0,
-    name: '开屏广告-全局',
+    name: '限时-开屏广告-全局',
     desc: '关闭打开应用时的开屏广告',
     order: OPEN_AD_ORDER,
     fastQuery: true,
-    matchTime: 10000,
+    matchTime: 20000,
     actionMaximum: 2,
     resetMatch: 'app',
     forcedTime: 10000,
     actionCdKey: 0,
     actionMaximumKey: 0,
     priorityTime: 10000,
-    disableIfAppGroupMatch: '开屏广告',
     rules: [
       {
         key: 0,
@@ -92,14 +91,13 @@ export default defineGkdGlobalGroups([
   },
   {
     key: 1,
-    name: '更新提示-全局',
+    name: '限时-应用提示-更新提示-全局',
     desc: '关闭应用的更新弹窗',
     order: UPDATE_PROMPT_ORDER,
     fastQuery: true,
-    matchTime: 10000,
+    matchTime: 20000,
     actionMaximum: 1,
     resetMatch: 'app',
-    disableIfAppGroupMatch: '更新提示',
     rules: [
       {
         key: 0,
@@ -134,14 +132,13 @@ export default defineGkdGlobalGroups([
   },
   {
     key: 2,
-    name: '青少年模式-全局',
+    name: '限时-应用提示-青少年模式-全局',
     desc: '关闭应用的青少年模式弹窗',
     order: YOUTH_MODE_ORDER,
     fastQuery: true,
-    matchTime: 10000,
+    matchTime: 20000,
     actionMaximum: 1,
     resetMatch: 'app',
-    disableIfAppGroupMatch: '青少年模式',
     rules: [
       {
         key: 0,

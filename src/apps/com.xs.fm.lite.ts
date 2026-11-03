@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告',
+      name: '持续-全屏广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -43,7 +44,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '分段广告',
+      name: '持续-页面内广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -65,7 +67,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '功能类-自动展开回复',
+      name: '持续-功能操作-自动展开回复',
+      enable: false,
       rules: [
         {
           fastQuery: true,

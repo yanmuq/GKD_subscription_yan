@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 4,
-      name: '其他-截屏分享',
+      name: '持续-应用提示弹窗-截屏分享',
+      enable: false,
       desc: '关闭截屏时app弹出的分享弹窗',
       rules: [
         {

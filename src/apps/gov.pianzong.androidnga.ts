@@ -6,10 +6,11 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
+      name: '限时-开屏广告',
+      enable: true,
       matchRoot: true,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
@@ -30,7 +31,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告-首页-推荐-卡片广告',
+      name: '持续-页面内广告-首页-推荐-卡片广告',
+      enable: false,
       rules: [
         {
           activityIds: 'com.donews.nga.activitys.MainActivity',
@@ -41,7 +43,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-话题-帖子列表广告',
+      name: '持续-页面内广告-话题-帖子列表广告',
+      enable: false,
       desc: '点击卡片x按钮关闭广告',
       activityIds:
         'gov.pianzong.androidnga.activity.forumdetail.ForumDetailActivity',
@@ -67,7 +70,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '局部广告-社区-顶部广告',
+      name: '持续-页面内广告-社区-顶部广告',
+      enable: false,
       rules: [
         {
           activityIds: 'com.donews.nga.activitys.MainActivity',
@@ -78,9 +82,10 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-弹窗广告',
+      name: '限时-全屏广告-弹窗广告',
+      enable: false,
       desc: '点击关闭',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -100,7 +105,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '局部广告-评论区底部广告',
+      name: '持续-页面内广告-评论区底部广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -119,9 +125,10 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '权限提示-通知权限',
+      name: '限时-应用提示-通知权限',
+      enable: false,
       desc: '点击关闭',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

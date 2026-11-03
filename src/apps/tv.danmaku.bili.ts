@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: -1,
-      name: '开屏广告',
+      name: '持续-全屏广告-开屏广告',
+      enable: true,
       matchRoot: true,
       fastQuery: true,
       //matchTime: 10000, 从桌面小组件进入哔哩哔哩观看视频后，退出返回到哔哩哔哩首页时会跳出开屏广告
@@ -26,7 +27,8 @@ export default defineGkdApp({
     },
     {
       key: 0,
-      name: '局部广告-评论区顶部公告横幅',
+      name: '持续-页面内广告-评论区顶部公告横幅',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -45,7 +47,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '分段广告-动态推荐卡片广告',
+      name: '持续-页面内广告-动态推荐卡片广告',
+      enable: false,
       desc: '点击卡片右上角[广告]按钮-点击不感兴趣',
       fastQuery: true,
       activityIds: 'tv.danmaku.bili.MainActivityV2',
@@ -64,7 +67,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '更新提示',
+      name: '持续-更新提示',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -96,7 +100,8 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '局部广告-视频页广告',
+      name: '持续-页面内广告-视频页广告',
+      enable: false,
       desc: '领取大会员月卡,B站免流星卡',
       fastQuery: true,
       rules: [
@@ -129,7 +134,8 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '局部广告-直播间悬浮窗广告',
+      name: '持续-页面内广告-直播间悬浮窗广告',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
       activityIds: 'com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3',
@@ -170,9 +176,9 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '权限提示-通知权限',
+      name: '持续-应用提示弹窗-通知权限',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -193,7 +199,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '分段广告-首页推荐视频卡片广告',
+      name: '持续-页面内广告-首页推荐视频卡片广告',
+      enable: false,
       fastQuery: true,
       activityIds: '.MainActivityV2',
       rules: [
@@ -261,9 +268,10 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '局部广告-个性化内容推荐弹窗',
+      name: '限时-应用提示-个性化内容推荐弹窗',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -277,7 +285,8 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '全屏广告-会员弹窗',
+      name: '持续-全屏广告-会员弹窗',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
       actionMaximum: 1,
@@ -330,9 +339,10 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '全屏广告-分享稿件弹窗',
+      name: '限时-全屏广告-分享稿件弹窗',
+      enable: false,
       desc: '点击关闭',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -348,7 +358,8 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '分段广告-搜索结果广告',
+      name: '持续-页面内广告-搜索结果广告',
+      enable: false,
       desc: '点击右下角[菜单]-点击[不感兴趣]',
       fastQuery: true,
       activityIds: 'com.bilibili.search2.main.BiliMainSearchActivity',
@@ -377,7 +388,8 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      name: '分段广告-视频详情页下方推广',
+      name: '持续-页面内广告-视频详情页下方推广',
+      enable: false,
       desc: '关闭[广告/推广/直播]',
       fastQuery: true,
       activityIds: 'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
@@ -443,7 +455,8 @@ export default defineGkdApp({
     },
     {
       key: 16,
-      name: '功能类-自动关闭故事模式',
+      name: '持续-功能操作-自动关闭故事模式',
+      enable: false,
       desc: '播放视频时退出竖屏模式',
       matchTime: 10000,
       actionMaximum: 1,
@@ -465,7 +478,8 @@ export default defineGkdApp({
     },
     {
       key: 17,
-      name: '功能类-自动点击评论区的[展开更多评论]',
+      name: '持续-功能操作-自动点击评论区的[展开更多评论]',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -488,7 +502,8 @@ export default defineGkdApp({
     },
     {
       key: 18,
-      name: '功能类-自动领取会员经验',
+      name: '持续-功能操作-自动领取会员经验',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -505,7 +520,8 @@ export default defineGkdApp({
     },
     {
       key: 19,
-      name: '功能类-自动点击查看原图',
+      name: '持续-功能操作-自动点击查看原图',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -534,7 +550,8 @@ export default defineGkdApp({
     },
     {
       key: 20,
-      name: '评价提示',
+      name: '持续-应用提示弹窗-评价提示',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -546,7 +563,8 @@ export default defineGkdApp({
     },
     {
       key: 21,
-      name: '功能类-直播自动点赞',
+      name: '持续-功能操作-直播自动点赞',
+      enable: false,
       desc: '左下角提示-点击',
       rules: [
         {
@@ -560,7 +578,8 @@ export default defineGkdApp({
     },
     {
       key: 22,
-      name: '功能类-直播自动投喂粉丝团',
+      name: '持续-功能操作-直播自动投喂粉丝团',
+      enable: false,
       desc: '左下角提示-点击投喂_需要0.1米谨慎开启(虽然只有一次)',
       matchTime: 10000,
       actionMaximum: 1,

@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-扫码确认解锁',
+      name: '持续-功能操作-扫码确认解锁',
+      enable: false,
       desc: '扫码成功后点击[确认并解锁]',
       rules: [
         {

@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-私人云看图弹窗广告',
+      name: '持续-全屏广告-私人云看图弹窗广告',
+      enable: false,
       desc: '在线私人云看图片自动弹出自动播放可跳过广告',
       rules: [
         {
