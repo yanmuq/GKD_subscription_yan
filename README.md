@@ -22,9 +22,9 @@ https://raw.githubusercontent.com/yanmuq/GKD_subscription_yan/main/dist/AIsouler
 
 | 项目 | 数量 |
 | --- | --- |
-| 版本 | v407 |
-| 应用 | 880 |
-| 应用规则组 | 2066 |
+| 版本 | v408 |
+| 应用 | 670 |
+| 应用规则组 | 1753 |
 | 全局规则组 | 3 |
 
 <!-- subscription-stats:end -->
